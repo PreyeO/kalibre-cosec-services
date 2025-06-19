@@ -1,15 +1,19 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Manrope, Montserrat } from "next/font/google";
 import "./globals.css";
+import Header from "@/components/layout/Header";
+import NavBar from "@/components/layout/NavBar";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const manrope = Manrope({
   subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-manrope",
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const montserrat = Montserrat({
   subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-montserrat",
 });
 
 export const metadata: Metadata = {
@@ -24,7 +28,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
+      <body className={`${manrope.variable} ${montserrat.variable} `}>
+        <Header />
+        <NavBar />
         {children}
       </body>
     </html>
