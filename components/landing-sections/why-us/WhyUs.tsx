@@ -15,7 +15,7 @@ const WhyUs = () => {
           <div className="flex relative">
             <Heading
               className="text-[32px] md:text-[64px] leading-[38px] md:leading-[78px] text-[rgba(18,40,71,1)]"
-              heading="Empowering industry success"
+              heading="Why Kalibre CoSec"
             />
             <Image
               src="/arrow.svg"

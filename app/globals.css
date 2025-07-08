@@ -138,7 +138,7 @@
 }
 
 .hero_background {
-  background-image: url("/bg-pattern.svg");
+  background-image: url("/landing-pattern.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

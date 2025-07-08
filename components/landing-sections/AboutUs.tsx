@@ -6,13 +6,20 @@ import BodyContent from "../ui/typography/BodyContent";
 import IdentityCard from "../ui/identity/identity-card";
 const AboutUs = () => {
   return (
-    <section className="pb-[35px] md:pb-[52px] md:px-[50px] px-[21px] bg-[linear-gradient(180deg,_#E9E9E9_0%,_#BCC4DC_100%)]">
+    <section className="lg:-translate-y-14 xl:-translate-y-18 -translate-y-6 md:-translate-y-10 pb-[35px] md:pb-[52px] md:px-[50px] px-[21px] bg-[linear-gradient(180deg,_#E9E9E9_0%,_#BCC4DC_100%)]">
       <Image
         src="/button.gif"
         alt="Button GIF"
         width={70}
         height={70}
-        className="mx-auto"
+        className="mx-auto pt-4 hidden md:block"
+      />
+      <Image
+        src="/button.gif"
+        alt="Button GIF"
+        width={40}
+        height={40}
+        className="mx-auto pt-4 md:hidden "
       />
 
       <p className="leading-[120%] font-primary font-light md:text-sm text-[12px] text-[#737373] w-[181px] md:w-[307px]  pt-[21px] md:pt-[50px]">
@@ -21,15 +28,15 @@ const AboutUs = () => {
           Corporate Governance & ESG Excellence
         </span>
       </p>
-      <div className="flex mt-[30px] lg:mt-[100px] md:mt-[50px] justify-start lg:gap-[62px] gap-6 flex-col xl:flex-row ">
+      <div className=" items-stretch flex mt-[30px] lg:mt-[100px] md:mt-[50px] justify-start lg:gap-[62px] gap-6 flex-col xl:flex-row ">
         <div className=" flex-grow w-full  rounded-[30px] border border-[#A8A9AD]/30 p-5">
           <Image
-            src="/about-image.jpg"
+            src="/about-us.jpg"
             alt="About us image"
             width={514}
             height={514}
             priority
-            className="rounded-[15px] mx-auto w-full h-auto object-cover"
+            className="rounded-[15px] w-full h-full object-cover"
           />
         </div>
         <div className="flex flex-col gap-6 md:gap-[50px] flex-grow">

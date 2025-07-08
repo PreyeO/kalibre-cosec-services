@@ -1,3 +1,5 @@
+import { Facebook, Instagram, Linkedin, Twitter } from "lucide-react";
+
 export const navLinks = [
   { name: "Home", href: "#home" },
   { name: "About Us", href: "#about_us" },
@@ -40,8 +42,8 @@ export const navLinks = [
 ];
 
 export const slides = [
-  { src: "/hero-image.jpg", alt: "Hero Image 1" },
-  { src: "/esg-image.jpg", alt: "Hero Image 2" },
+  { src: "/hero-image.svg", alt: "Hero Image 1" },
+  { src: "/hero-image.svg", alt: "Hero Image 2" },
 ];
 export const values = [
   {
@@ -187,5 +189,58 @@ export const clientTestimonials = [
     position: "CEO, Mono",
     review:
       "Kalibre CoSec gets startups. They balanced investor needs with our reality on the ground, no fluff, just real value",
+  },
+];
+
+export const socials = [
+  {
+    name: "Instagram",
+    icon: Instagram,
+    href: "https://instagram.com/yourhandle",
+  },
+  {
+    name: "LinkedIn",
+    icon: Linkedin,
+    href: "https://instagram.com/yourhandle",
+  },
+  {
+    name: "X",
+    icon: Twitter,
+    href: "https://instagram.com/yourhandle",
+  },
+  {
+    name: "Facebook",
+    icon: Facebook,
+    href: "https://instagram.com/yourhandle",
+  },
+];
+
+export const quickLinks = [
+  {
+    title: "About Us",
+    href: "/",
+  },
+  {
+    title: "Services",
+    href: "/",
+  },
+  {
+    title: "Careers",
+    href: "/",
+  },
+  {
+    title: "Resources",
+    href: "/",
+  },
+];
+
+export const legalLinks = [
+  {
+    title: "Privacy Policy",
+    href: "/",
+  },
+  {
+    title: "Terms and Conditions",
+    href: "/",
   },
 ];

@@ -28,7 +28,7 @@ export default function HeroImage() {
   }, [api]);
 
   return (
-    <div className="w-screen overflow-hidden relative md:mt-[52px] ">
+    <div className="w-screen overflow-hidden relative md:mt-[52px] z-10 ">
       <Carousel
         plugins={[
           Autoplay({
@@ -48,7 +48,7 @@ export default function HeroImage() {
                 alt={slide.alt}
                 width={1440}
                 height={500}
-                className="w-full h-auto object-cover bg-red-700"
+                className="w-full h-auto object-cover"
                 priority={index === 0}
               />
             </CarouselItem>
@@ -56,7 +56,7 @@ export default function HeroImage() {
         </CarouselContent>
 
         {/* Dots */}
-        <div className="flex gap-2 z-10 justify-center items-center md:-translate-y-12 md:hidden">
+        <div className=" gap-2 z-10 justify-center items-center md:-translate-y-12 hidden">
           {slides.map((_, index) => (
             <Button
               key={index}
