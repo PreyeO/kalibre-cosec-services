@@ -39,8 +39,9 @@
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
-  --font-primary: var(--font-marope);
+  --font-primary: var(--font-manrope);
   --font-secondary: var(--font-montserrat);
+  --font-tetiary: var(--font-poppins);
 }
 
 :root {
@@ -118,5 +119,32 @@
   }
   body {
     @apply bg-background text-foreground;
+  }
+}
+@layer utilities {
+  @keyframes bounce-arrow {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-6px);
+    }
+  }
+
+  .animate-bounce-arrow {
+    animation: bounce-arrow 0.6s ease-in-out infinite;
+  }
+}
+
+.hero_background {
+  background-image: url("/bg-pattern.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+@layer components {
+  .hero_background {
+    @apply bg-cover bg-center bg-no-repeat;
   }
 }

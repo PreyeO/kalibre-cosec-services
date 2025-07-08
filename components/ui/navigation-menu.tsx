@@ -59,7 +59,7 @@ function NavigationMenuItem({
 }
 
 const navigationMenuTriggerStyle = cva(
-  "group inline-flex h-9 w-max items-center justify-center rounded-md bg-transparent px-4 py-2 text-sm font-medium hover:text-white hover:bg-[#FF914D]  disabled:pointer-events-none disabled:opacity-50 data-[state=open]:hover:bg-[#FF914D] data-[state=open]:text-white data-[state=open]:focus:bg-[#FF914D] data-[state=open]:bg-accent/50 focus-visible:ring-ring/50 outline-none transition-[color,box-shadow] focus-visible:ring-[3px] focus-visible:outline-1 rounded-[20px] "
+  "group inline-flex h-9 w-max items-center justify-center rounded-md bg-transparent px-4 py-2 text-sm font-medium hover:text-white hover:bg-[#FF914D]  disabled:pointer-events-none disabled:opacity-50 data-[state=open]:hover:bg-[#FF914D] data-[state=open]:text-white data-[state=open]:focus:bg-[#FF914D] data-[state=open]:bg-[#FF914D] focus-visible:ring-ring/50 outline-none transition-[color,box-shadow] focus-visible:ring-[3px] focus-visible:outline-1 rounded-[20px] "
 );
 
 function NavigationMenuTrigger({
@@ -130,7 +130,7 @@ function NavigationMenuLink({
       data-slot="navigation-menu-link"
       className={cn(
         "cursor-pointer",
-        "hover:bg-[#FF914D] hover:text-white",
+        "",
         "focus:bg-[#FF914D] focus:text-white",
         "rounded-[20px]",
         "transition-all outline-none p-2 text-sm flex flex-col gap-1",

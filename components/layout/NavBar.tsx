@@ -22,6 +22,7 @@ import {
   NavigationMenuContent,
   NavigationMenuLink,
 } from "@/components/ui/navigation-menu";
+import DiscoveryButton from "../ui/discovery-button";
 
 const NavBar = () => {
   const [open, setOpen] = useState(false);
@@ -40,11 +41,11 @@ const NavBar = () => {
   }, []);
 
   return (
-    <nav className="font-primary md:mt-[42px] mt-0 h-[50px] md:h-0 md:bg-transparent bg-[#F7F7F7] flex items-center justify-between w-full px-5 md:px-[50px] z-50 relative">
+    <nav className="bg-[#F7F7F7] lg:bg-transparent absolute md:pt-[54px] pt-0 h-[50px] md:h-0 flex items-center justify-between  w-full z-50 font-primary  px-5 lg:px-[50px] ">
       <Logo />
 
       {/* Desktop Menu */}
-      <div className="hidden md:flex absolute left-1/2 transform -translate-x-1/2 px-[10px] font-normal text-lg h-[56px] rounded-[50px] gap-10 max-w-[900px] justify-center items-center border border-[#E3E5E8] backdrop-blur-[10px] bg-white/60">
+      <div className=" text-[#122847] hidden lg:flex px-[10px] md:px-2 font-normal text-lg h-[56px] rounded-[50px]  lg:w-[569px] md:w-[500px] justify-center items-center border border-[#E3E5E8] backdrop-blur-[10px] bg-white/60">
         <NavigationMenu>
           <NavigationMenuList>
             {navLinks.map((link) =>
@@ -54,11 +55,12 @@ const NavBar = () => {
                   <NavigationMenuContent className="bg-[#122847] text-base font-medium rounded-[30px] my-2 w-full">
                     <div className="grid grid-cols-2 gap-3 p-6 w-[750px]">
                       {link.children.map((sublink) => (
-                        <NavigationMenuLink key={sublink.name} asChild>
-                          <Link
-                            href={sublink.href}
-                            className="text-sm transition-colors text-white/70 hover:text-[#F67D30]"
-                          >
+                        <NavigationMenuLink
+                          key={sublink.name}
+                          asChild
+                          className="text-sm transition-colors text-white/70 "
+                        >
+                          <Link href={sublink.href} className="">
                             {sublink.name}
                           </Link>
                         </NavigationMenuLink>
@@ -68,13 +70,16 @@ const NavBar = () => {
                 </NavigationMenuItem>
               ) : (
                 <NavigationMenuItem key={link.name}>
-                  <NavigationMenuLink asChild>
+                  <NavigationMenuLink
+                    asChild
+                    className=" hover:bg-[#FF914D] hover:text-white"
+                  >
                     <Link
                       href={link.href}
                       className={`px-4 py-2 text-sm font-medium transition-colors ${
                         pathname === link.href
                           ? "text-[#F67D30]"
-                          : "text-[#122847] hover:text-[#F67D30]"
+                          : " hover:text-[#F67D30]  "
                       }`}
                     >
                       {link.name}
@@ -88,17 +93,12 @@ const NavBar = () => {
       </div>
 
       {/* Desktop CTA */}
-      <div className="hidden md:block">
-        <Button className="text-sm font-medium flex items-center justify-center gap-[10px] bg-[#F67D30] px-[5px] h-10 py-4 cursor-pointer rounded-[30px]">
-          <span className="pl-[15px]">Book a Discovery Call</span>
-          <span className="w-[30px] h-[30px] bg-white rounded-full mx-auto flex items-center justify-center">
-            <ArrowRight size={20} color="#3A3A3A" />
-          </span>
-        </Button>
+      <div className="hidden lg:block">
+        <DiscoveryButton />
       </div>
 
       {/* Mobile Menu */}
-      <div className="md:hidden">
+      <div className="lg:hidden">
         <Sheet
           open={open}
           onOpenChange={(val) => {
@@ -107,7 +107,7 @@ const NavBar = () => {
           }}
         >
           <SheetTrigger asChild>
-            <Button variant="ghost" size="icon">
+            <Button variant="ghost" size="icon" className="cursor-pointer">
               <Menu size={24} color="#3A3A3A" />
             </Button>
           </SheetTrigger>
@@ -115,13 +115,12 @@ const NavBar = () => {
           <SheetContent side="top" className="w-full h-full p-0">
             <div className="flex gap-[6px] items-center px-4 pt-6">
               {showServices ? (
-                <Button
+                <button
                   onClick={() => setShowServices(false)}
-                  className="flex items-center gap-1 text-[22px] text-[#F67D30] font-semibold"
-                  variant="ghost"
+                  className=" cursor-pointer flex items-center gap-1 text-[22px] text-[#F67D30] font-semibold"
                 >
                   <MoveLeft size={24} /> Services
-                </Button>
+                </button>
               ) : (
                 <span className="text-lg font-bold"></span>
               )}
@@ -137,23 +136,22 @@ const NavBar = () => {
                 <div className="flex flex-col gap-6 px-5 pt-6 text-lg font-medium">
                   {navLinks.map((link) =>
                     link.children ? (
-                      <Button
-                        variant="ghost"
+                      <button
                         key={link.name}
                         onClick={() => setShowServices(true)}
-                        className=" text-[#122847] text-lg  w-full flex justify-end "
+                        className="hover:text-[#F67D30] cursor-pointer text-[#122847]  text-lg flex justify-start font-medium items-center  gap-[6px] "
                       >
                         {link.name}
                         <ChevronRight size={24} />
-                      </Button>
+                      </button>
                     ) : (
                       <Link
                         key={link.name}
                         href={link.href}
                         className={` ${
                           pathname === link.href
-                            ? "text-[#F67D30]"
-                            : "text-[#122847]"
+                            ? "text-[#F67D30] "
+                            : "text-[#122847] hover:text-[#F67D30]"
                         }`}
                       >
                         {link.name}
@@ -191,7 +189,7 @@ const NavBar = () => {
 
             {!showServices && (
               <SheetFooter>
-                <Button className="text-sm font-primary font-medium flex items-center justify-center gap-[10px] bg-[#F67D30] px-[5px] h-10 py-4 cursor-pointer rounded-[30px] w-[70%] mt-6 mx-auto">
+                <Button className="text-sm font-primary font-medium flex items-center justify-center gap-[5px] bg-[#F67D30] px-[5px] h-10 py-4 cursor-pointer rounded-[30px]  mt-6 mx-auto">
                   <span className="pl-[15px]">Book a Discovery Call</span>
                   <span className="w-[30px] h-[30px] bg-white rounded-full mx-auto flex items-center justify-center">
                     <ArrowRight size={20} color="#3A3A3A" />
