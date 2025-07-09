@@ -147,4 +147,38 @@
   .hero_background {
     @apply bg-cover bg-center bg-no-repeat;
   }
+  .gradient-border {
+    border: 1px solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(
+      180.01deg,
+      #f67d30 26.49%,
+      #1e3a8a 117.49%
+    );
+  }
 }
+
+.philosophy-bg {
+  background-image: url("/philosophy-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.service-bg-gradient {
+  background-image: linear-gradient(
+    180deg,
+    rgba(233, 233, 233, 0.46) 4.23%,
+    #e5e5e8 45.39%,
+    #bcc4dc 117.16%
+  );
+}
+
+/* .about-bg-gradient {
+  background-image: linear-gradient(
+    180deg,
+    rgba(233, 233, 233, 0.46) 4.23%,
+    #e9e9e9 0%,
+    #bcc4dc 100%
+  );
+} */

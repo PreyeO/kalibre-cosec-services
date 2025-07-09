@@ -1,15 +1,15 @@
-import { Facebook, Instagram, Linkedin, Twitter } from "lucide-react";
+import { Facebook, Instagram, Linkedin, Search, Twitter } from "lucide-react";
 
 export const navLinks = [
-  { name: "Home", href: "#home" },
+  { name: "Home", href: "/" },
   { name: "About Us", href: "#about_us" },
   {
     name: "Services",
     href: "#services",
     children: [
       {
-        name: "ESG Maturity & Sustainability Assessment",
-        href: "/services/esg-maturity-sustainability",
+        name: "ESG & SUSTAINABILITY ADVISORY",
+        href: "/services/esg_advisory",
       },
       {
         name: "Corporate Governance Advisory & Board Effectiveness",
@@ -242,5 +242,70 @@ export const legalLinks = [
   {
     title: "Terms and Conditions",
     href: "/",
+  },
+];
+
+export const sectors = [
+  {
+    name: "Telecommunications",
+    src: "/telephone.svg",
+  },
+  {
+    name: "Capital Markets",
+    src: "/capital.svg",
+  },
+  { name: "Oil and Gas", src: "/rig.svg" },
+  {
+    name: "Power and Energy",
+    src: "/power.svg",
+  },
+  {
+    name: "Insurance Brokage",
+    src: "/insurance.svg",
+  },
+  {
+    name: "Financial Services",
+    src: "/wallet.svg",
+  },
+  {
+    name: "Hospitality",
+    src: "/people.svg",
+  },
+  {
+    name: "agriculture",
+    src: "/food.svg",
+  },
+];
+
+export const solutions = [
+  {
+    title: "ESG Maturity & Materiality Assessments",
+    icon: Search,
+    description:
+      "We assess your ESG maturity and identify what matters most to your stakeholders, operations and long-term goals. Through benchmarking, diagnostics and leadership workshops, we uncover ESG gaps and strategic opportunities. The output informs prioritisation, improves decision-making and ensures resources are allocated to the most material and value-driving ESG areas.",
+  },
+  {
+    title: "ESG Strategy & Roadmap Development",
+    icon: Search,
+    description:
+      "Moving from ambition to execution requires a focused ESG roadmap. Kalibre develops strategies that connect ESG themes with business goals, investor expectations and compliance triggers. With clear timelines,  leadership alignment, defined accountabilities and measurable outcomes, we enable implementation that is scalable, credible and responsive to evolving global and local demands.",
+  },
+  {
+    title: " Sustainability & ESG Reporting",
+    icon: Search,
+    description:
+      "We help you design ESG reporting that meets international standards and stakeholder expectations. Our support includes defining oversight roles, codifying ESG charters and aligning disclosures to strategy. Whether you are early-stage or listed, we ensure your reporting is credible, comparable and positioned to drive trust across investors, regulators and the public.",
+  },
+  {
+    title: "ESG Frameworks Design & Policy Support",
+    icon: Search,
+    description:
+      "We work with your leadership to establish ESG structures that balance regulatory compliance with strategic clarity. Our approach includes codifying oversight responsibilities, formalising ESG policies and embedding cross-functional coordination. The result is a governance foundation that enables effective board oversight, executive ownership and consistent ESG execution across your organisation.",
+  },
+  {
+    title: " ESG Board & Executive Training",
+    icon: Search,
+    description:
+      "Kalibre equips directors and executives with strategic ESG insights, tools, global reporting trends and regulatory developments. Our sessions are tailored to your industry, your organization's long-term goals and risk profile, enabling oversight bodies to engage ESG issues confidently and align decisions with corporate purpose and resilience.",
   },
 ];
