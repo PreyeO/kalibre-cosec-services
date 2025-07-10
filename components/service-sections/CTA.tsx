@@ -9,7 +9,7 @@ interface CTAProps {
 
 const CTASection: React.FC<CTAProps> = ({ heading, subheading }) => {
   return (
-    <section className="bg-white md:py-[87px] py-[35px] flex flex-col justify-center px-5">
+    <section className="cta-bg md:py-[87px] py-[35px] flex flex-col justify-center px-5">
       <div className="max-w-[516px] flex flex-col gap-[10px] justify-center items-center text-center mx-auto ">
         <Heading
           heading={heading}

@@ -13,6 +13,8 @@ interface ServiceHeroProps {
   content: string;
   label: string;
   className: string;
+  downloadUrl?: string;
+  showButton?: boolean;
 }
 
 const ServiceHeroSection: React.FC<ServiceHeroProps> = ({
@@ -23,6 +25,8 @@ const ServiceHeroSection: React.FC<ServiceHeroProps> = ({
   content,
   label,
   className,
+  downloadUrl,
+  showButton,
 }) => {
   return (
     <section className="md:mt-[100px] pt-[70px]">
@@ -31,9 +35,17 @@ const ServiceHeroSection: React.FC<ServiceHeroProps> = ({
       >
         <HeroHeading span={span} service={service} />
         <HeroSubHeading content={content} />
-        <Link href="#philosophy" className="z-10 ">
-          <HeroButton label={label} />
-        </Link>
+        {showButton !== false &&
+          (downloadUrl ? (
+            <a href={downloadUrl} download className="z-10">
+              <HeroButton label={label} />
+            </a>
+          ) : (
+            <Link href="#philosophy" className="z-10">
+              <HeroButton label={label} />
+            </Link>
+          ))}
+
         <ServiceImage src={src} alt={alt} />
       </div>
     </section>

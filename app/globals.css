@@ -177,3 +177,9 @@
 html {
   scroll-behavior: smooth;
 }
+.cta-bg {
+  background-image: url("/cta-banner.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}

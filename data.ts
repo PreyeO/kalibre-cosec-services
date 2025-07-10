@@ -244,11 +244,11 @@ export const quickLinks = [
 export const legalLinks = [
   {
     title: "Privacy Policy",
-    href: "/",
+    href: "/privacy_policy",
   },
   {
     title: "Terms and Conditions",
-    href: "/",
+    href: "/terms_conditions",
   },
 ];
 
