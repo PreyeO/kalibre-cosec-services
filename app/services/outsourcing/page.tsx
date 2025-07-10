@@ -3,6 +3,7 @@ import Sectors from "@/components/ui/services/sectors";
 import OurPhilosophySection from "@/components/service-sections/OurPhilosophy";
 import ServiceHeroSection from "@/components/service-sections/Hero";
 import CTASection from "@/components/service-sections/CTA";
+import OutsourceSupportSection from "@/components/service-sections/OutsourceSupport";
 
 const page = () => {
   return (
@@ -27,6 +28,7 @@ const page = () => {
            companies maintain investor-grade standards while remaining agile. "
         />
       </div>
+      <OutsourceSupportSection />
 
       <CTASection
         heading="Ready to Outsource Smarter?"

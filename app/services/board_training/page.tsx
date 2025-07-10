@@ -3,6 +3,7 @@ import Sectors from "@/components/ui/services/sectors";
 import OurPhilosophySection from "@/components/service-sections/OurPhilosophy";
 import ServiceHeroSection from "@/components/service-sections/Hero";
 import CTASection from "@/components/service-sections/CTA";
+import TrainingOfferingsSection from "@/components/service-sections/TrainingOfferings";
 
 const page = () => {
   return (
@@ -28,7 +29,7 @@ const page = () => {
           insights, whether preparing for investment, restructuring, IPO or global expansion. "
         />
       </div>
-
+      <TrainingOfferingsSection />
       <CTASection
         heading="Shape Boardroom Excellence, Not Just Compliance"
         subheading="Equip your board and executives with 

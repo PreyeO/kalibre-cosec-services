@@ -607,3 +607,74 @@ export const complianceServiceSteps = [
       "Clients may engage us on a project or retained basis to handle regulatory responses, licensing updates or coordination.",
   },
 ];
+
+export const trainings = [
+  {
+    title: "Governance Fundamentals for Boards",
+    digit: "01",
+  },
+  {
+    title: "ESG Strategy & Oversight for Leadership",
+    digit: "02",
+  },
+  {
+    title: "Compliance & Risk Management Training",
+    digit: "03",
+  },
+  {
+    title: "Board Performance & Effectiveness Workshops",
+    digit: "04",
+  },
+  {
+    title: "Custom Sessions Based on Client Needs",
+    digit: "05",
+  },
+];
+
+export const deliveries = [
+  {
+    title:
+      "Board and executive retreats, senior leadership teams, C-suite engagements",
+    span: "In-person: ",
+  },
+  {
+    title: " Live, interactive 60–90 minute sessions",
+    span: "Virtual Workshops:",
+  },
+  {
+    title: " Flexible sessions designed for internal leadership programs",
+    span: "Modular:",
+  },
+  {
+    title:
+      "Board Onboarding: Specialized training for newly appointed directors",
+    span: "04",
+  },
+];
+
+export const outsourceSolutions = [
+  {
+    title: "Payroll & Benefits Administration",
+    icon: Search,
+    description:
+      "End-to-end payroll processing, benefits structuring and statutory compliance across multiple jurisdictions. Designed to meet investor-grade standards, ensuring timely disbursements, accurate reporting and full alignment with local labor and tax regulations.",
+  },
+  {
+    title: "HR Advisory, Payroll & Employer of Record Services",
+    icon: Search,
+    description:
+      "We draft and maintain compliant employment contracts, handbooks and HR frameworks tailored to local labor laws. We support staff onboarding and offboarding, full EOR services, personnel file audits and internal controls that reduce employment-related risk.",
+  },
+  {
+    title: "Finance & Accounting Support",
+    icon: Search,
+    description:
+      "We provide finance function support, including bookkeeping, reconciliations, cashflow tracking, statutory filings and internal financial reporting. Our team helps you maintain audit-ready records and meet tax and regulatory obligations without growing your in-house finance team prematurely.",
+  },
+  {
+    title: "Business Operations Support",
+    icon: Search,
+    description:
+      "Day-to-day support across key operational tasks, including vendor coordination, document management and internal policy implementation. Ideal for lean teams needing structured back-office support without the overhead of building an in-house function.",
+  },
+];

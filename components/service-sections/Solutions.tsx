@@ -16,10 +16,10 @@ interface SolutionsSectionProps {
 
 const SolutionsSection: React.FC<SolutionsSectionProps> = ({ solutions }) => {
   return (
-    <section className="md:mt-8 pt-[70px] pb-[45px] px-5">
-      <div className="flex flex-col justify-center items-center gap-[25px]">
+    <section className="md:pt-8 pt-[70px] pb-[45px] px-5">
+      <div className="flex flex-col justify-center items-center gap-[25px] max-w-[621px] mx-auto ">
         <div className="p-[1px] rounded-full bg-gradient-to-b from-[#F67D30] to-[#1E3A8A]">
-          <div className="md:w-[116px] w-[85px] h-5 md:h-[42px] flex items-center justify-center rounded-full bg-white/55">
+          <div className="md:w-[116px] w-[85px] h-5 md:h-[42px] flex items-center justify-center rounded-full bg-[#f1d0bc]">
             <span className="bg-gradient-to-b from-[#F67D30] to-[#1E3A8A] bg-clip-text text-transparent font-semibold text-sm">
               SOLUTIONS
             </span>
@@ -38,7 +38,7 @@ const SolutionsSection: React.FC<SolutionsSectionProps> = ({ solutions }) => {
               className="w-[350px] lg:w-[430px] h-auto md:h-[500px] lg:h-[430px] rounded-[20px] border border-[#BCC4DC] md:pt-[25px] py-4 md:pb-[51px] px-4"
             >
               <div className="max-w-[386px] flex flex-col justify-center items-center text-center mx-auto md:gap-[25px] gap-[10.22px]">
-                <div className="w-[50px] h-[50px] rounded-md bg-gray-300 flex items-center justify-center">
+                <div className="w-[50px] h-[50px] rounded-md border border-[#BCC4DC] flex items-center justify-center">
                   <Icon color="black" size={26} />
                 </div>
                 <div className="flex flex-col gap-[10px]">
