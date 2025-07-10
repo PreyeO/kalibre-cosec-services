@@ -1,8 +1,9 @@
 import React from "react";
-import HeroHeading from "./HeroHeading";
-import HeroSubHeading from "./HeroSubHeading";
-import HeroButton from "./HeroButton";
-import HeroImage from "./HeroImage";
+import HeroHeading from "../typography/HeroHeading";
+import HeroSubHeading from "../typography/HeroSubHeading";
+import HeroButton from "../buttons/HeroButton";
+import HeroImage from "../images/HeroImage";
+import Link from "next/link";
 
 const HeroContent = () => {
   return (
@@ -13,7 +14,9 @@ const HeroContent = () => {
       institutions to deliver expert-led governance, regulatory alignment and
       corporate infrastructure across Africa and beyond."
       />
-      <HeroButton label="  Learn More" />
+      <Link href="#about_us">
+        <HeroButton label="  Learn More" />
+      </Link>
       <HeroImage />
     </div>
   );

@@ -8,7 +8,7 @@ interface ServiceImageProps {
 
 const ServiceImage: React.FC<ServiceImageProps> = ({ src, alt }) => {
   return (
-    <div className="w-screen overflow-hidden -mt-10   ">
+    <div className="w-screen overflow-hidden md:-mt-10   ">
       <Image
         src={src}
         alt={alt}

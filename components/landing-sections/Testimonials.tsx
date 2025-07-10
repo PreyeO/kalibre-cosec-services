@@ -12,7 +12,7 @@ import {
   CarouselNext,
   CarouselPrevious,
   type CarouselApi,
-} from "../ui/carousel"; // adjust path
+} from "../ui/carousels/carousel"; // adjust path
 
 const Testimonials = () => {
   const [api, setApi] = useState<CarouselApi | null>(null);

@@ -1,7 +1,7 @@
 import React from "react";
-import HeroHeading from "../banner/HeroHeading";
-import HeroSubHeading from "../banner/HeroSubHeading";
-import HeroButton from "../banner/HeroButton";
+import HeroHeading from "../typography/HeroHeading";
+import HeroSubHeading from "../typography/HeroSubHeading";
+import HeroButton from "../buttons/HeroButton";
 import ServiceImage from "./ServiceImage";
 
 interface ServiceHeroProps {

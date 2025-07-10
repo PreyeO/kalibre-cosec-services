@@ -131,7 +131,7 @@ function NavigationMenuLink({
       className={cn(
         "cursor-pointer",
         "",
-        "focus:bg-[#FF914D] hover:text-[#FF914D] focus:text-white",
+        "focus:text-[#FF914D] hover:text-[#FF914D]",
         "rounded-[20px]",
         "transition-all outline-none p-2 text-sm flex flex-col gap-1",
         "focus-visible:ring-[3px] focus-visible:ring-ring/50",

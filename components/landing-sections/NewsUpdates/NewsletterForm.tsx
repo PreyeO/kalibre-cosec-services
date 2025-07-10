@@ -12,7 +12,7 @@ import {
   FormMessage,
 } from "../../ui/form";
 import { Input } from "../../ui/input";
-import { Button } from "@/components/ui/button";
+import { Button } from "@/components/ui/buttons/button";
 import { MoveRight } from "lucide-react";
 
 const NewsletterForm = () => {

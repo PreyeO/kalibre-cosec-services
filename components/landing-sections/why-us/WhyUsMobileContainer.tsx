@@ -1,4 +1,4 @@
-import WhyUsCard from "@/components/ui/identity/why-us-card";
+import WhyUsCard from "@/components/landing-sections/why-us/why-us-card";
 import { Globe, Lightbulb, TrendingUp, UsersRound } from "lucide-react";
 import React from "react";
 

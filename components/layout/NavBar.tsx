@@ -5,8 +5,8 @@ import { usePathname } from "next/navigation";
 import Link from "next/link";
 import { navLinks } from "@/data";
 import Logo from "../ui/logo";
-import { Button } from "../ui/button";
-import { Menu, ArrowRight, ChevronRight, MoveLeft } from "lucide-react";
+import { Button } from "../ui/buttons/button";
+import { Menu, ChevronRight, MoveLeft } from "lucide-react";
 import {
   Sheet,
   SheetTrigger,
@@ -22,7 +22,7 @@ import {
   NavigationMenuContent,
   NavigationMenuLink,
 } from "@/components/ui/navigation-menu";
-import DiscoveryButton from "../ui/discovery-button";
+import DiscoveryButton from "../ui/buttons/discovery-button";
 
 const NavBar = () => {
   const [open, setOpen] = useState(false);
@@ -41,7 +41,7 @@ const NavBar = () => {
   }, []);
 
   return (
-    <nav className="bg-[#F7F7F7] lg:bg-transparent absolute md:pt-[54px] pt-0 h-[50px] md:h-0 flex items-center justify-between  w-full z-50 font-primary  px-5 lg:px-[50px] ">
+    <nav className="bg-[#F7F7F7] lg:bg-transparent absolute lg:pt-[54px] pt-0 h-[50px] md:h-[80px] flex items-center justify-between  w-full z-50 font-primary  px-5 lg:px-[50px] ">
       <Logo />
 
       {/* Desktop Menu */}
@@ -78,7 +78,7 @@ const NavBar = () => {
                       href={link.href}
                       className={`px-4 py-2 text-sm font-medium transition-colors ${
                         pathname === link.href
-                          ? "text-[#F67D30]"
+                          ? "text-[#F67D30] focus:text-white focus:bg-[#F67D30]"
                           : " hover:text-[#F67D30]  "
                       }`}
                     >
@@ -112,7 +112,7 @@ const NavBar = () => {
             </Button>
           </SheetTrigger>
 
-          <SheetContent side="top" className="w-full h-full p-0">
+          <SheetContent side="top" className="w-full h-[50%] p-0">
             <div className="flex gap-[6px] items-center px-4 pt-6">
               {showServices ? (
                 <button
@@ -188,13 +188,8 @@ const NavBar = () => {
             </div>
 
             {!showServices && (
-              <SheetFooter>
-                <Button className="text-sm font-primary font-medium flex items-center justify-center gap-[5px] bg-[#F67D30] px-[5px] h-10 py-4 cursor-pointer rounded-[30px]  mt-6 mx-auto">
-                  <span className="pl-[15px]">Book a Discovery Call</span>
-                  <span className="w-[30px] h-[30px] bg-white rounded-full mx-auto flex items-center justify-center">
-                    <ArrowRight size={20} color="#3A3A3A" />
-                  </span>
-                </Button>
+              <SheetFooter className="w-[250px]">
+                <DiscoveryButton />
               </SheetFooter>
             )}
           </SheetContent>

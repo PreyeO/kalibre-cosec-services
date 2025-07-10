@@ -1,10 +1,10 @@
 import React from "react";
 import Heading from "../../ui/typography/Heading";
 import Image from "next/image";
-import DiscoveryButton from "../../ui/discovery-button";
 import WhyUsDesktopContainer from "./WhyUsDesktopContainer";
 import WhyUsMobileContainer from "./WhyUsMobileContainer";
 import ColoredTitle from "@/components/ui/typography/colored-title";
+import DiscoveryButton from "@/components/ui/buttons/discovery-button";
 
 const WhyUs = () => {
   return (

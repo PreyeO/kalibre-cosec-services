@@ -1,7 +1,7 @@
 import React from "react";
 import Heading from "../ui/typography/Heading";
 import BodyContent from "../ui/typography/BodyContent";
-import ServiceCarousel from "../ui/services/service-carousel";
+import ServiceCarousel from "../ui/carousels/service-carousel";
 
 const ServiceOffering = () => {
   return (
