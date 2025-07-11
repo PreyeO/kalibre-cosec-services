@@ -11,10 +11,12 @@ const ServiceOffering = () => {
           className="text-[32px] md:text-[64px]  text-white leading-[38px] md:leading-[78px] md:w-[278px] w-[139px]"
           heading="Service Offerings"
         />
-        <BodyContent
-          content="Kalibre CoSec delivers integrated corporate services designed to help companies scale with credibility, operate with regulatory confidence and attract global investment."
-          className="text-[#A8A9AD] md:text-lg text-sm md:leading-[26px] leading-[22px] max-w-[773px]"
-        />
+        <BodyContent className="text-[#A8A9AD] md:text-lg text-sm md:leading-[26px] leading-[22px] max-w-[773px]">
+          {" "}
+          Kalibre CoSec delivers integrated corporate services designed to help
+          companies scale with credibility, operate with regulatory confidence
+          and attract global investment.
+        </BodyContent>
       </div>
 
       <ServiceCarousel />

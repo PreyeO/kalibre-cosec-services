@@ -4,7 +4,7 @@ import Metrics from "@/components/landing-sections/Metrics";
 import ServiceOffering from "@/components/landing-sections/ServiceOffering";
 import Testimonials from "@/components/landing-sections/Testimonials";
 import WhyUs from "@/components/landing-sections/why-us/WhyUs";
-import NewsLetter from "@/components/landing-sections/NewsUpdates/NewsLetter";
+import NewsLetter from "@/components/layout/NewsUpdates/NewsLetter";
 import AboutValues from "@/components/landing-sections/our-values/AboutValues";
 
 export default function Home() {

@@ -49,21 +49,32 @@ const AboutUs = () => {
               className="text-lg md:text-[27px] text-[#122847]"
             />
             <Underline />
-            <BodyContent
-              className="md:text-base text-sm leading-[22px] md:leading-[30px] text-[#3A3A3A] pt-4"
-              content="A privately-owned, strategic corporate services company helping businesses, investors and founders build governance-aligned, investment-ready and globally compliant organizations. From ESG and risk frameworks to board structuring, compliance systems and investor documentation, we equip companies with the tools to grow, govern and scale with confidence. Our expertise spans emerging and global markets, ensuring clients operate with transparency, resilience and regulatory foresight. Whether preparing for investment, managing multi-jurisdictional growth or elevating governance maturity, Kalibre delivers more than advice, we deliver embedded solutions that support long-term success."
-            />
+            <BodyContent className="md:text-base text-sm leading-[22px] md:leading-[30px] text-[#3A3A3A] pt-4">
+              A privately-owned, strategic corporate services company helping
+              businesses, investors and founders build governance-aligned,
+              investment-ready and globally compliant organizations. From ESG
+              and risk frameworks to board structuring, compliance systems and
+              investor documentation, we equip companies with the tools to grow,
+              govern and scale with confidence. Our expertise spans emerging and
+              global markets, ensuring clients operate with transparency,
+              resilience and regulatory foresight. Whether preparing for
+              investment, managing multi-jurisdictional growth or elevating
+              governance maturity, Kalibre elivers more than advice, we deliver
+              embedded solutions that support long-term success.
+            </BodyContent>
           </div>
 
           <div className="flex justify-start gap-[16px] md:gap-[32px]  items-center flex-wrap md:flex-nowrap ">
             <IdentityCard
-              text="To empower businesses with strategic governance, ESG and compliance solutions that strengthen accountability, reduce risk and drive sustainable corporate performance across markets."
+              text="To empower businesses with strategic governance, ESG and compliance solutions that 
+              strengthen accountability, reduce risk and drive sustainable corporate performance across markets."
               title="Our Mission"
             />
             <IdentityCard
               title="Our Vision"
-              text="To become the leading corporate services partner for growth-stage companies, investors and institutions across Africa and beyond, known for building governance-led, investment-ready and resilient organizations.
-"
+              text="To become the leading corporate services partner for growth-stage companies, investors 
+              and institutions across Africa and beyond, 
+              known for building governance-led, investment-ready and resilient organizations."
             />
           </div>
         </div>

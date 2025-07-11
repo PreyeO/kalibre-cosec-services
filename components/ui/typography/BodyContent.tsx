@@ -1,11 +1,12 @@
 import React from "react";
 
-interface HeadingProps {
-  content: string;
+interface BodyContentProps {
+  children: React.ReactNode;
   className: string;
 }
-const BodyContent: React.FC<HeadingProps> = ({ content, className }) => {
-  return <p className={`${className} font-primary font-normal`}>{content}</p>;
+
+const BodyContent: React.FC<BodyContentProps> = ({ children, className }) => {
+  return <p className={`${className} font-primary font-normal`}>{children}</p>;
 };
 
 export default BodyContent;

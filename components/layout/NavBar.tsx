@@ -112,7 +112,7 @@ const NavBar = () => {
             </Button>
           </SheetTrigger>
 
-          <SheetContent side="top" className="w-full h-[50%] p-0">
+          <SheetContent side="top" className="w-full h-full p-0">
             <div className="flex gap-[6px] items-center px-4 pt-6">
               {showServices ? (
                 <button

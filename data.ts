@@ -678,3 +678,51 @@ export const outsourceSolutions = [
       "Day-to-day support across key operational tasks, including vendor coordination, document management and internal policy implementation. Ideal for lean teams needing structured back-office support without the overhead of building an in-house function.",
   },
 ];
+export const dataCollectionList = [
+  "Delivering and managing the services and products you request",
+
+  "Communicating important updates, responding to inquiries and providing customer support",
+
+  "Meeting legal and regulatory obligations, including tax and reporting requirements",
+
+  "Conducting risk assessments, fraud prevention and security measures",
+
+  "Enhancing and personalizing your experience on our website and services",
+
+  "Marketing communications, where permitted by law and your consent",
+
+  "Research and analysis to improve our offerings and business operations",
+];
+
+export const privacyListSeven = [
+  "Access and receive a copy of your personal data held by us",
+  "Rectify inaccurate or incomplete data",
+  "Erase your data in certain circumstances",
+  "Restrict or object to processing of your data",
+  "Request portability of your data to another providers",
+  "Withdraw consent where processing is based on consent",
+  "Lodge complaints with relevant data protection authorities",
+];
+
+export const termsList = [
+  {
+    title:
+      " refers to any individual or legal entity engaging Kalibre’s services.",
+    span: "Client",
+  },
+  {
+    title:
+      " means any professional or digital services provided by Kalibre including but not limited to corporate governance advisory, company secretarial services, compliance, investor readiness, outsourcing solutions, and investor matchmaking.",
+    span: " Services",
+  },
+  {
+    title:
+      "  means all non-public business or technical information shared during the engagement.",
+    span: "Confidential Information",
+  },
+  {
+    title:
+      " means any data, documents, intellectual property, or other materials provided by the Client for use in connection with Kalibre’s Services.",
+    span: "Client Materials",
+  },
+];

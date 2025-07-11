@@ -31,10 +31,9 @@ const OutsourceSupportSection = () => {
             </div>
             <div className="flex flex-col gap-[10px] justify-center lg:justify-start items-center lg:text-left text-center lg:items-start">
               <ColoredTitle title={solution.title} />
-              <BodyContent
-                content={solution.description}
-                className="text-[#A8A9AD] md:text-base md:leading-6 text-sm leading-[22px]"
-              />
+              <BodyContent className="text-[#A8A9AD] md:text-base md:leading-6 text-sm leading-[22px]">
+                {solution.description}
+              </BodyContent>
             </div>
           </div>
         ))}
