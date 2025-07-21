@@ -8,7 +8,8 @@ const AboutUs = () => {
   return (
     <section
       id="about_us"
-      className="lg:-translate-y-14 xl:-translate-y-18 -translate-y-6 md:-translate-y-10 pb-[35px] md:pb-[52px] md:px-[50px] px-[21px] bg-[linear-gradient(180deg,_#E9E9E9_0%,_#BCC4DC_100%)]"
+      className="lg:-translate-y-14 xl:-translate-y-18 -translate-y-6 md:-translate-y-10 pb-[35px] 
+      md:pb-[52px] md:px-[50px] px-[21px] bg-[linear-gradient(180deg,_#E9E9E9_0%,_#BCC4DC_100%)]"
     >
       <Image
         src="/button.gif"

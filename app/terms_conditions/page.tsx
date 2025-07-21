@@ -11,7 +11,7 @@ const page = () => {
     day: "numeric",
   });
   return (
-    <main>
+    <>
       <ServiceHeroSection
         alt=" TERMS & CONDITIONS "
         src="/terms.jpg"
@@ -24,7 +24,7 @@ const page = () => {
       />
       <TermsSection />
       <NewsLetter />
-    </main>
+    </>
   );
 };
 

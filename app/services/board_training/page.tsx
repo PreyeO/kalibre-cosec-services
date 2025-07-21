@@ -7,7 +7,7 @@ import TrainingOfferingsSection from "@/components/service-sections/TrainingOffe
 
 const page = () => {
   return (
-    <main className="">
+    <>
       <ServiceHeroSection
         alt="BOARD & C-SUITES TRAINING"
         src="/board-training.jpg"
@@ -35,7 +35,7 @@ const page = () => {
         subheading="Equip your board and executives with 
         strategic governance, ESG foresight and cross-market leadership capabilities.."
       />
-    </main>
+    </>
   );
 };
 

@@ -726,3 +726,24 @@ export const termsList = [
     span: "Client Materials",
   },
 ];
+
+export const perks = [
+  {
+    value: "FLEXIBLE WORK PLACE",
+    details:
+      "We uphold the highest ethical standards, ensuring transparency, trust, and compliance at every level... Add your perks",
+    digit: "01",
+  },
+  {
+    value: "FLEXIBLE VACATION POLICY",
+    details:
+      "We deliver world-class governance and compliance solutions with deep industry knowledge and strategic insight.... Add your perks.",
+    digit: "02",
+  },
+  {
+    value: "FLEXIBLE VACATION POLICY",
+    details:
+      "We deliver world-class governance and compliance solutions with deep industry knowledge and strategic insight.... Add your perks.",
+    digit: "03",
+  },
+];

@@ -9,7 +9,7 @@ import AboutValues from "@/components/landing-sections/our-values/AboutValues";
 
 export default function Home() {
   return (
-    <main className="overflow-x-clip">
+    <>
       <Hero />
       <AboutUs />
       <AboutValues />
@@ -18,6 +18,6 @@ export default function Home() {
       <Metrics />
       <Testimonials />
       <NewsLetter />
-    </main>
+    </>
   );
 }

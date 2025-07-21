@@ -183,3 +183,9 @@ html {
   background-repeat: no-repeat;
   background-position: center;
 }
+
+.contact-bg {
+  background-image: url("/big-arrow.png");
+  background-size: 950px;
+  background-repeat: no-repeat;
+}
