@@ -32,7 +32,7 @@ const AboutUs = () => {
           Corporate Governance & ESG Excellence
         </span>
       </p>
-      <div className=" items-stretch flex mt-[30px] lg:mt-[100px] md:mt-[50px] justify-start lg:gap-[62px] gap-6 flex-col xl:flex-row ">
+      <div className=" items-stretch flex mt-[30px] lg:mt-[100px] md:mt-[50px] justify-start gap-6 lg:gap-8 flex-col xl:flex-row ">
         <div className=" flex-grow w-full  rounded-[30px] border border-[#A8A9AD]/30 p-5">
           <Image
             src="/about-us.jpg"
