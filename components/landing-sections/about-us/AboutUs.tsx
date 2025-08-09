@@ -40,7 +40,15 @@ const AboutUs = () => {
             width={514}
             height={514}
             priority
-            className="rounded-[15px] max-w-[514px] h-full object-cover"
+            className="rounded-[15px] max-w-[514px]  object-cover md:block hidden"
+          />
+          <Image
+            src="/about-us.jpg"
+            alt="About us image"
+            width={330}
+            height={330}
+            priority
+            className="rounded-[15px] w-full h-auto object-cover md:hidden block"
           />
         </div>
         <div className="flex flex-col gap-6 md:gap-[50px] flex-grow">
