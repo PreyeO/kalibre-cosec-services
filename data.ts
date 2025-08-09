@@ -141,7 +141,7 @@ export const clientTestimonials = [
       "The guidance we got from Kalibre CoSec helped us tighten our operational setup and prepare better for partner audits. They made the process easy to understand and more importantly, relevant to our kind of business.",
   },
   {
-    src: "https://github.com/shadcn.png",
+    src: "https://github.com/leerob.png",
     alt: "Funpe Osobu",
 
     name: "Funpe sobu",
@@ -158,7 +158,7 @@ export const clientTestimonials = [
       "For real estate investment, governance and compliance can’t be an afterthought. Kalibre CoSec helped us rethink our internal governance architecture and supported better policy alignment across business units. Their perspective is both strategic and grounded.",
   },
   {
-    src: "https://github.com/shadcn.png",
+    src: "https://github.com/leerob.png",
     alt: "Daniel Owuna",
     name: "Daniel Owuna",
     position: "CEO, Autstrip",
@@ -174,7 +174,7 @@ export const clientTestimonials = [
       "Easy to work with, always on time and understood exactly what we needed, even before we did. Kalibre CoSec made our business setup painless.",
   },
   {
-    src: "https://github.com/shadcn.png",
+    src: "https://github.com/leerob.png",
     alt: "John Doe",
     name: "John Doe",
     position: "VP Legal, FairMoney",

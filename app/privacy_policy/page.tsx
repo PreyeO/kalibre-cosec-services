@@ -12,7 +12,7 @@ const page = () => {
   });
 
   return (
-    <>
+    <main>
       <ServiceHeroSection
         alt="PRIVACY POLICY"
         src="/policy.jpg"
@@ -25,7 +25,7 @@ const page = () => {
       />
       <PrivacySection />
       <NewsLetter />
-    </>
+    </main>
   );
 };
 

@@ -34,7 +34,7 @@ const CareerForm = () => {
         type="file"
         required
       />
-      <div className="w-[138px] pl-[101px] pt-[6px]">
+      <div className="w-[138px] md:pl-[101px] pt-[6px]">
         <FormButton />
       </div>
     </form>

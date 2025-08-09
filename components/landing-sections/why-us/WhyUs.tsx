@@ -11,14 +11,14 @@ const WhyUs = () => {
     <section className="bg-gradient-to-b from-[#FFFFFF] to-[#E6E6E6] md:px-[50px] px-5 md:pt-[50px] pt-[35px] pb-[35px] md:pb-[52px] ">
       <div className=" lg:flex lg:justify-evenly">
         <div className="lg:w-[536px] w-[201px]">
-          <ColoredTitle title="   Kalibre CoSec Limited " />
+          <ColoredTitle title="Kalibre CoSec Limited " />
           <div className="flex relative">
             <Heading
               className="text-[32px] md:text-[64px] leading-[38px] md:leading-[78px] text-[rgba(18,40,71,1)]"
               heading="Why Kalibre CoSec"
             />
             <Image
-              src="/arrow.svg"
+              src="/arrow.png"
               alt="Arrow Icon"
               width={224}
               height={256}

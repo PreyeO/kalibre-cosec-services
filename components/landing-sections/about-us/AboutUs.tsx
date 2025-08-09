@@ -8,7 +8,7 @@ const AboutUs = () => {
   return (
     <section
       id="about_us"
-      className="lg:-translate-y-14 xl:-translate-y-18 -translate-y-6 md:-translate-y-10 pb-[35px] 
+      className="l xl:-translate-y-18 -translate-y-6 md:-translate-y-10 pb-[35px] 
       md:pb-[52px] md:px-[50px] px-[21px] bg-[linear-gradient(180deg,_#E9E9E9_0%,_#BCC4DC_100%)]"
     >
       <Image
@@ -40,7 +40,7 @@ const AboutUs = () => {
             width={514}
             height={514}
             priority
-            className="rounded-[15px] w-full h-full object-cover"
+            className="rounded-[15px] max-w-[514px] h-full object-cover"
           />
         </div>
         <div className="flex flex-col gap-6 md:gap-[50px] flex-grow">

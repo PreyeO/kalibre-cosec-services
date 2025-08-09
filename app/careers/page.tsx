@@ -6,12 +6,12 @@ import React from "react";
 
 const page = () => {
   return (
-    <>
+    <main className="">
       <Hero />
       <Perks />
       <ConnectWithUs />
       <NewsLetter />
-    </>
+    </main>
   );
 };
 

@@ -7,12 +7,12 @@ import Heading from "../ui/typography/Heading";
 
 const Hero = () => {
   return (
-    <section className="mt-[133px] px-[50px] ">
-      <div className="flex justify-evenly">
-        <div className="flex flex-col gap-[16px]">
+    <section className="md:mt-[133px] mt-[100px] md:px-[50px] px-[22px] ">
+      <div className="flex md:flex-nowrap flex-wrap items-center gap-[30px] md:gap-[19px] justify-center md:justify-between ">
+        <div className="flex flex-col gap-[16px] justify-center text-center md:text-left">
           <div className="flex-col gap-[10px]">
             <ColoredTitle title="careers at Kalibre CoSec" />
-            <div className="text-[66px] leading-[80px] flex flex-col gap-[6px]">
+            <div className="text-[26px] leading-8 md:text-[66px] md:leading-[80px] flex flex-col gap-[6px]">
               <Heading heading="Contribute" className="text-[#F67D30]" />
               <Heading
                 heading="And make an impact"
@@ -24,7 +24,7 @@ const Hero = () => {
             Join the company that is leading the way forward in corporate
             governance and compliance advisory
           </BodyContent>
-          <div className="w-[160px]">
+          <div className="w-[160px] justify-center mx-auto md:mx-0">
             <HeroButton label="Work with us" />
           </div>
         </div>
