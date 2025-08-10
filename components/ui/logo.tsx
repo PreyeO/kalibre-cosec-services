@@ -1,9 +1,10 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const Logo = () => {
   return (
-    <div>
+    <Link href="/">
       <Image
         src="/logo.svg"
         alt="Logo Image"
@@ -12,7 +13,7 @@ const Logo = () => {
         className="w-full object-cover "
         priority
       />
-    </div>
+    </Link>
   );
 };
 

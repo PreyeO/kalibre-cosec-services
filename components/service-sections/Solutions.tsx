@@ -1,5 +1,3 @@
-// components/ui/solutions/solutions-section.tsx
-
 import React from "react";
 import ServiceHeading from "@/components/ui/typography/service-heading";
 import { LucideIcon } from "lucide-react";
@@ -35,7 +33,7 @@ const SolutionsSection: React.FC<SolutionsSectionProps> = ({ solutions }) => {
           return (
             <div
               key={index}
-              className="w-[350px] lg:w-[430px] h-auto md:h-[500px] lg:h-[430px] rounded-[20px] border border-[#BCC4DC] md:pt-[25px] py-4 md:pb-[51px] px-4"
+              className="w-[350px] lg:w-[400px] h-auto md:h-[500px] lg:h-[430px] rounded-[20px] border border-[#BCC4DC] md:pt-[25px] py-4 md:pb-[51px] px-4"
             >
               <div className="max-w-[386px] flex flex-col justify-center items-center text-center mx-auto md:gap-[25px] gap-[10.22px]">
                 <div className="w-[50px] h-[50px] rounded-md border border-[#BCC4DC] flex items-center justify-center">

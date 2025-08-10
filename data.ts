@@ -1,4 +1,33 @@
-import { Facebook, Instagram, Linkedin, Search, Twitter } from "lucide-react";
+import {
+  MapPin,
+  ShieldCheck,
+  BookOpenCheck,
+  Users,
+  ClipboardCheck,
+  UserCheck,
+  FileText,
+  BarChart2,
+  ShieldAlert,
+  Facebook,
+  Instagram,
+  Linkedin,
+  Twitter,
+  Archive,
+  CalendarCheck,
+  Repeat,
+  Folder,
+  FileCheck,
+  Cpu,
+  Layers,
+  Handshake,
+  LayoutGrid,
+  MessageCircle,
+  BookOpen,
+  Shield,
+  Speaker,
+  CreditCard,
+  Briefcase,
+} from "lucide-react";
 
 export const navLinks = [
   { name: "Home", href: "/" },
@@ -225,15 +254,15 @@ export const socials = [
 export const quickLinks = [
   {
     title: "About Us",
-    href: "/",
+    href: "#about-us",
   },
   {
     title: "Services",
-    href: "/",
+    href: "#services",
   },
   {
     title: "Careers",
-    href: "/",
+    href: "/careers",
   },
   {
     title: "Resources",
@@ -287,31 +316,31 @@ export const sectors = [
 export const esgSolutions = [
   {
     title: "ESG Maturity & Materiality Assessments",
-    icon: Search,
+    icon: BarChart2,
     description:
       "We assess your ESG maturity and identify what matters most to your stakeholders, operations and long-term goals. Through benchmarking, diagnostics and leadership workshops, we uncover ESG gaps and strategic opportunities. The output informs prioritisation, improves decision-making and ensures resources are allocated to the most material and value-driving ESG areas.",
   },
   {
     title: "ESG Strategy & Roadmap Development",
-    icon: Search,
+    icon: MapPin,
     description:
       "Moving from ambition to execution requires a focused ESG roadmap. Kalibre develops strategies that connect ESG themes with business goals, investor expectations and compliance triggers. With clear timelines,  leadership alignment, defined accountabilities and measurable outcomes, we enable implementation that is scalable, credible and responsive to evolving global and local demands.",
   },
   {
     title: " Sustainability & ESG Reporting",
-    icon: Search,
+    icon: FileText,
     description:
       "We help you design ESG reporting that meets international standards and stakeholder expectations. Our support includes defining oversight roles, codifying ESG charters and aligning disclosures to strategy. Whether you are early-stage or listed, we ensure your reporting is credible, comparable and positioned to drive trust across investors, regulators and the public.",
   },
   {
     title: "ESG Frameworks Design & Policy Support",
-    icon: Search,
+    icon: ShieldCheck,
     description:
       "We work with your leadership to establish ESG structures that balance regulatory compliance with strategic clarity. Our approach includes codifying oversight responsibilities, formalising ESG policies and embedding cross-functional coordination. The result is a governance foundation that enables effective board oversight, executive ownership and consistent ESG execution across your organisation.",
   },
   {
     title: " ESG Board & Executive Training",
-    icon: Search,
+    icon: BookOpenCheck,
     description:
       "Kalibre equips directors and executives with strategic ESG insights, tools, global reporting trends and regulatory developments. Our sessions are tailored to your industry, your organization's long-term goals and risk profile, enabling oversight bodies to engage ESG issues confidently and align decisions with corporate purpose and resilience.",
   },
@@ -346,38 +375,38 @@ export const esgServiceSteps = [
 
 export const corporateSolutions = [
   {
-    title: " Board & Committee Effectiveness Assessments",
-    icon: Search,
+    title: "Board & Committee Effectiveness Assessments",
+    icon: Users,
     description:
       "We assess board and committee performance through peer reviews, benchmarking and analytics. Our evaluations identify performance gaps, governance risks and areas for improvement. Findings are benchmarked against global standards and delivered with clear, investor-ready recommendations to strengthen oversight, enhance leadership effectiveness and support long-term value creation and stakeholder confidence.",
   },
   {
-    title: " Corporate Governance Evaluation",
-    icon: Search,
+    title: "Corporate Governance Evaluation",
+    icon: ClipboardCheck,
     description:
       "We evaluate governance structures for alignment with transparency, accountability and sustainability principles. Our reviews apply global frameworks and regulatory benchmarks tailored to your growth trajectory and risk profile. The goal is to ensure governance maturity supports strategy execution, decision-making quality and trust among investors, regulators and other key stakeholders.",
   },
   {
     title: "Director Selection & Nominee Services",
-    icon: Search,
+    icon: UserCheck,
     description:
       "We help structure effective boards by identifying independent directors or providing nominee and shareholder services. Our approach addresses diversity, regulatory alignment, independence requirements and strategic capabilities. By tailoring board composition to your organizational needs, we help build effective oversight structures aligned with long-term growth, resilience and stakeholder expectations.",
   },
   {
-    title: " Codification of Governance Frameworks",
-    icon: Search,
+    title: "Codification of Governance Frameworks",
+    icon: FileText,
     description:
       "We design and document governance frameworks through clear charters, protocols and policy structures. These frameworks ensure regulatory alignment, clarify oversight responsibilities and embed best practices across your organization. Codification supports investor trust, improves accountability and builds governance systems that grow with the company and adapt to shifting stakeholder expectations.",
   },
   {
     title: "Remuneration Benchmarking & Policy Advisory",
-    icon: Search,
+    icon: BarChart2,
     description:
       "We benchmark director and executive compensation using market-aligned data to ensure fairness, performance alignment and stakeholder confidence. Our advisory services deliver tailored policies and disclosures that meet regulatory expectations. We focus on transparency, retention and reward structures that incentivize leadership and drive sustainable, long-term value creation for your enterprise.",
   },
   {
     title: "Whistleblowing Infrastructure Setup",
-    icon: Search,
+    icon: ShieldAlert,
     description:
       "We implement secure whistleblowing systems to strengthen internal accountability and regulatory compliance. Our services include policy drafting, reporting channels, case management protocols and optional hosting support. These confidential mechanisms help reinforce ethical culture, protect against misconduct and satisfy global governance and ESG reporting expectations through tested, scalable frameworks.",
   },
@@ -413,37 +442,37 @@ export const corporateServiceSteps = [
 export const secreterailSolutions = [
   {
     title: "Entity Formation & Corporate Structuring",
-    icon: Search,
+    icon: Archive,
     description:
       "We support corporations with seamless company incorporation, ensuring full regulatory registration and compliant entity structuring. Our comprehensive services include shareholder documentation, directorship appointments, regulatory liaison and strategic guidance on designing legal entities that support scalable growth, efficient operations and align with your long-term business objectives and compliance requirements.",
   },
   {
     title: "Meeting Support",
-    icon: Search,
+    icon: CalendarCheck,
     description:
       "We provide end-to-end professional support for board, shareholders and committee meetings, including scheduling, agenda preparation, minute-taking, resolution drafting and follow-up tracking. Our service ensures governance continuity, accurate documentation, compliance with legal requirements and smooth facilitation of all corporate decision-making processes.ng governance continuity and compliance with relevant legal frameworks.",
   },
   {
     title: "Entity Lifecycle Management",
-    icon: Search,
+    icon: Repeat,
     description:
       "We manage the full lifecycle of your corporate entities, including formation, registration, restructuring and reorganizations. Our team expertly handles share capital adjustments, directorship changes, registered office updates and ensures timely, accurate and compliant filings across multiple jurisdictions, enabling seamless corporate governance, operational agility and alignment with evolving regulatory requirements.",
   },
   {
     title: "Corporate Records & Registers Management",
-    icon: Search,
+    icon: Folder,
     description:
       "We maintain accurate, up-to-date statutory registers, shareholder ledgers, director logs and other essential corporate records. Our secure management system ensures strict compliance with legal standards, facilitates audit readiness, enhances corporate transparency and supports organizations in meeting regulatory requirements efficiently across multiple jurisdictions, reducing risk and improving governance outcomes.",
   },
   {
     title: "Statutory Compliance & Regulatory Filings (Local & Cross-Border)",
-    icon: Search,
+    icon: FileCheck,
     description:
       "We provide comprehensive management of statutory compliance and regulatory filings with local and international authorities. This includes annual returns, post-incorporation updates, share structure amendments and coordination of multi-jurisdictional filings, ensuring timely compliance and minimizing regulatory risks across borders.",
   },
   {
     title: "Digital Solutions",
-    icon: Search,
+    icon: Cpu,
     description:
       "We deliver technology-enabled corporate secretarial services, including secure digital record-keeping, electronic signatures, virtual board meeting facilitation and real-time compliance monitoring. These solutions enhance operational efficiency, improve governance transparency and support remote collaboration across distributed teams and jurisdictions.",
   },
@@ -479,37 +508,37 @@ export const secreterialServiceSteps = [
 export const investmentSolutions = [
   {
     title: "Investor Network Access",
-    icon: Search,
+    icon: Users,
     description:
       "We facilitate curated introductions to venture capital firms, angel investors and private equity funds that align with your startup’s sector, growth stage and capital goals. Our selective approach ensures that founders engage with the right investors at the right time to unlock capital, strategic guidance and long-term business value.",
   },
   {
     title: "Cap Table & Documentation Clean-Up",
-    icon: Search,
+    icon: FileText,
     description:
       "We optimize your capital structure and prepare critical investor-facing documents to ensure alignment with investor expectations. Our team prepares and refines key documents including shareholder agreements, investor rights frameworks and equity terms. The goal is to support credible negotiations, reduce legal friction and present a clean, investor-ready profile to the market.",
   },
   {
     title: "Due Diligence Readiness",
-    icon: Search,
+    icon: ShieldCheck,
     description:
       "We prepare you for investor scrutiny by conducting mock due diligence, identifying gaps and assembling comprehensive, well-structured data rooms. Our process anticipates investor expectations and presents your business in a clear, organized and defensible format that accelerates decision-making and increases confidence in your operational, financial and legal readiness.",
   },
   {
     title: "Pitch & Internal Alignment",
-    icon: Search,
+    icon: Speaker,
     description:
       "We align your investor-facing narrative with the actual structure and governance of your company. From pitch decks to policy frameworks, we ensure consistency across messaging, ownership, risk posture and execution. This alignment enhances credibility during investor conversations and builds trust from early engagement through deal negotiation and post-close integration.",
   },
   {
     title: "Governance & ESG Integration",
-    icon: Search,
+    icon: Layers,
     description:
       "We build tailored governance frameworks that evolve with your company’s growth stage and funding lifecycle. From Seed to Series C and beyond, we design governance that is scalable, founder-friendly and investment-grade. ESG considerations are integrated early to meet investor priorities, enhance transparency and support long-term commercial and regulatory resilience.",
   },
   {
     title: "Deal Structuring & Closing Support",
-    icon: Search,
+    icon: Handshake,
     description:
       "We guide founders through the full deal lifecycle, from understanding term sheets to negotiating investor rights and closing documents. Our support ensures that deal terms are commercially sound, legally robust and strategically aligned with long-term growth goals. We protect founder interests while facilitating successful closings with speed and clarity.",
   },
@@ -545,37 +574,37 @@ export const investmentServiceSteps = [
 export const complianceSolutions = [
   {
     title: "Compliance Framework Design & Implementation",
-    icon: Search,
+    icon: LayoutGrid,
     description:
       "We help companies build or formalize compliance functions by establishing clear internal policies, reporting procedures and controls documentation. Tailored compliance frameworks are designed to fit each business’ unique needs, enabling effective risk management, regulatory adherence and a strong foundation for ongoing compliance across all operational areas and jurisdictions.",
   },
   {
     title: "AML/CPT/CFT & KYC Program Support",
-    icon: Search,
+    icon: ShieldCheck,
     description:
       "We support financial institutions, fintechs and other regulated companies in designing and enhancing AML, CPT, CFT and KYC programs. Our services cover policy development, staff training, regulator documentation and risk-based compliance practices that strengthen defenses against financial crime and ensure compliance with global and local regulatory requirements.",
   },
   {
     title: "Data Protection & Privacy Compliance",
-    icon: Search,
+    icon: Shield,
     description:
       "As a licensed Data Protection Compliance Organisation, we help businesses navigate complex data protection laws and regulations. Our services include translating privacy principles into operational policies, developing privacy notices, managing data subject requests, conducting impact assessments and providing board and executive training to ensure accountability and compliance.",
   },
   {
     title: "Licensing & Regulatory Approvals",
-    icon: Search,
+    icon: FileCheck,
     description:
       "Assisting businesses with obtaining and renewing essential licenses, permits and registrations required for lawful operation across multiple markets. Services include managing application processes, preparing regulatory submissions and compliance documentation, ensuring timely approvals and renewals to maintain uninterrupted business operations and adherence to diverse local, regional and international regulatory requirements.",
   },
   {
     title: "Training & Awareness Programs",
-    icon: Search,
+    icon: BookOpen,
     description:
       "Delivering tailored training programs for staff and leadership designed to embed a strong compliance culture. Sessions enhance understanding of regulatory requirements, risk management and ethical business practices. Empowering teams to uphold corporate standards, identify potential risks early and proactively address compliance challenges across all levels of the organisation.",
   },
   {
     title: "Regulatory Reporting & Liaison",
-    icon: Search,
+    icon: MessageCircle,
     description:
       "Managing regulatory filings and reporting obligations with accuracy and promptness. Serving as a trusted liaison between businesses and regulatory authorities to ensure clear communication, address issues swiftly and maintain compliance. Supporting ongoing adherence to legal requirements and fostering positive relationships with regulators across all operational jurisdictions.",
   },
@@ -655,29 +684,30 @@ export const deliveries = [
 export const outsourceSolutions = [
   {
     title: "Payroll & Benefits Administration",
-    icon: Search,
+    icon: CreditCard,
     description:
       "End-to-end payroll processing, benefits structuring and statutory compliance across multiple jurisdictions. Designed to meet investor-grade standards, ensuring timely disbursements, accurate reporting and full alignment with local labor and tax regulations.",
   },
   {
     title: "HR Advisory, Payroll & Employer of Record Services",
-    icon: Search,
+    icon: Users,
     description:
       "We draft and maintain compliant employment contracts, handbooks and HR frameworks tailored to local labor laws. We support staff onboarding and offboarding, full EOR services, personnel file audits and internal controls that reduce employment-related risk.",
   },
   {
     title: "Finance & Accounting Support",
-    icon: Search,
+    icon: BarChart2,
     description:
       "We provide finance function support, including bookkeeping, reconciliations, cashflow tracking, statutory filings and internal financial reporting. Our team helps you maintain audit-ready records and meet tax and regulatory obligations without growing your in-house finance team prematurely.",
   },
   {
     title: "Business Operations Support",
-    icon: Search,
+    icon: Briefcase,
     description:
       "Day-to-day support across key operational tasks, including vendor coordination, document management and internal policy implementation. Ideal for lean teams needing structured back-office support without the overhead of building an in-house function.",
   },
 ];
+
 export const dataCollectionList = [
   "Delivering and managing the services and products you request",
 

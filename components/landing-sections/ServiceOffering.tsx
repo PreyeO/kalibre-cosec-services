@@ -5,7 +5,10 @@ import ServiceCarousel from "../ui/carousels/service-carousel";
 
 const ServiceOffering = () => {
   return (
-    <section className="bg-[#001529] md:px-[50px] px-5 md:pt-[50px] pt-[35px] pb-[35px] md:pb-[52px] ">
+    <section
+      id="services"
+      className="bg-[#001529] md:px-[50px] px-5 md:pt-[50px] pt-[35px] pb-[35px] md:pb-[52px] "
+    >
       <div className="flex flex-col md:gap-[25px] gap-[10px]">
         <Heading
           className="text-[32px] md:text-[64px]  text-white leading-[38px] md:leading-[78px] md:w-[278px] w-[139px]"

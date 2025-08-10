@@ -64,7 +64,7 @@ const Footer = () => {
           <FooterHeading heading="Contact Us" />
           <div className="flex flex-col gap-4">
             <Link href="">info@kalibrecosec.org</Link>
-            <Link href="">+2348028890404</Link>
+            <p>+2348028890404</p>
           </div>
         </div>
 

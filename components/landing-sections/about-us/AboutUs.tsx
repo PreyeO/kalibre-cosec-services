@@ -52,7 +52,7 @@ const AboutUs = () => {
           />
         </div>
         <div className="flex flex-col gap-6 md:gap-[50px] flex-grow">
-          <div className="xl:w-[704px] w-full  ">
+          <div className="max-w-[704px]  ">
             <Heading
               heading="Who We Are"
               className="text-lg md:text-[27px] text-[#122847]"
