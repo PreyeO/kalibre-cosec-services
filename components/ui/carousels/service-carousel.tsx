@@ -24,11 +24,11 @@ const ServiceCarousel = () => {
         }}
       >
         <div className="lg:flex gap-5 absolute -top-10 left-2/2 -translate-x-12 hidden ">
-          <CarouselPrevious className="" />
-          <CarouselNext />
+          <CarouselPrevious className=" cursor-pointer" />
+          <CarouselNext className=" cursor-pointer" />
         </div>
-        <CarouselPrevious className="lg:hidden block absolute translate-x-8 z-10 bg-[#F67D30] text-white" />
-        <CarouselNext className="lg:hidden block absolute -translate-x-8 z-10 bg-[#F67D30] text-white" />
+        <CarouselPrevious className=" cursor-pointer lg:hidden block absolute translate-x-8 z-10 bg-[#F67D30] text-white" />
+        <CarouselNext className=" cursor pointer lg:hidden block absolute -translate-x-8 z-10 bg-[#F67D30] text-white" />
         <CarouselContent className="lg:gap-[25px] ">
           {serviceSlides.map((service, index) => (
             <CarouselItem
@@ -40,7 +40,7 @@ const ServiceCarousel = () => {
                 alt={service.alt}
                 width={430}
                 height={330}
-                className="rounded-[15px] object-cover"
+                className="rounded-[15px] object-cover h-[330px] w-auto"
                 priority
               />
               <Link href={service.href}>

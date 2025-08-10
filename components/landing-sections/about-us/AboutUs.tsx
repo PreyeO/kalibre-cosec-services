@@ -40,7 +40,7 @@ const AboutUs = () => {
             width={514}
             height={514}
             priority
-            className="rounded-[15px] max-w-[514px]  object-cover md:block hidden"
+            className="rounded-[15px] max-w-[514px]  object-cover md:block hidden mx-auto"
           />
           <Image
             src="/about-us.jpg"
