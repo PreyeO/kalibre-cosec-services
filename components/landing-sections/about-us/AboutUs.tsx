@@ -33,15 +33,16 @@ const AboutUs = () => {
         </span>
       </p>
       <div className=" items-stretch flex mt-[30px] lg:mt-[100px] md:mt-[50px] justify-start gap-6 lg:gap-8 flex-col xl:flex-row ">
-        <div className=" flex-grow w-full  rounded-[30px] border border-[#A8A9AD]/30 p-5">
+        <div className="flex items-center justify-center w-full rounded-[30px] border border-[#A8A9AD]/30 p-5">
           <Image
             src="/about-us.jpg"
             alt="About us image"
             width={514}
             height={514}
             priority
-            className="rounded-[15px] max-w-[514px] max-h-[514px] object-cover md:block hidden mx-auto"
+            className="rounded-[15px] max-w-[514px] max-h-[514px] object-cover md:block hidden"
           />
+
           <Image
             src="/about-us.jpg"
             alt="About us image"
@@ -52,7 +53,7 @@ const AboutUs = () => {
           />
         </div>
         <div className="flex flex-col gap-6 md:gap-[50px] flex-grow">
-          <div className="max-w-[704px]  ">
+          <div className="max-w-[704px]">
             <Heading
               heading="Who We Are"
               className="text-lg md:text-[27px] text-[#122847]"

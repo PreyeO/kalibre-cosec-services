@@ -254,11 +254,11 @@ export const socials = [
 export const quickLinks = [
   {
     title: "About Us",
-    href: "#about-us",
+    href: "/#about-us",
   },
   {
     title: "Services",
-    href: "#services",
+    href: "/#services",
   },
   {
     title: "Careers",
@@ -266,7 +266,7 @@ export const quickLinks = [
   },
   {
     title: "Resources",
-    href: "/",
+    href: "/http://www.bbinsights.online/",
   },
 ];
 
