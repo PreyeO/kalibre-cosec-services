@@ -4,6 +4,7 @@ import "./globals.css";
 import Header from "@/components/layout/Header";
 import NavBar from "@/components/layout/NavBar";
 import Footer from "@/components/layout/Footer";
+import FloatingCallButton from "@/components/ui/buttons/floating-call-button";
 
 // Font setup
 const manrope = Manrope({
@@ -77,6 +78,7 @@ export default function RootLayout({
         <NavBar />
         {children}
         <Footer />
+        <FloatingCallButton />
       </body>
     </html>
   );
