@@ -10,7 +10,7 @@ const Hero = () => {
     <section className="md:mt-[133px] mt-[100px] md:px-[50px] px-[22px] ">
       <div className="flex md:flex-nowrap flex-wrap items-center gap-[30px] md:gap-0 justify-center md:justify-between ">
         <div className="flex flex-col gap-[16px] justify-center text-center md:text-left">
-          <div className="flex-col gap-[10px] max-w-[636px]">
+          <div className="flex-col gap-[10px] w-[346px] md:w-[636px]">
             <ColoredTitle title="careers at Kalibre CoSec" />
             <div className="text-[26px] leading-8 md:text-[66px] md:leading-[80px] flex flex-col gap-[6px]">
               <Heading heading="Contribute" className="text-[#F67D30]" />
