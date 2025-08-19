@@ -23,17 +23,17 @@ const ServiceCarousel = () => {
           loop: false,
         }}
       >
-        <div className="lg:flex gap-5 absolute -top-10 left-2/2 -translate-x-12 hidden ">
+        <div className="md:flex gap-5 absolute -top-10 left-2/2 -translate-x-12 hidden ">
           <CarouselPrevious className=" cursor-pointer" />
           <CarouselNext className=" cursor-pointer" />
         </div>
-        <CarouselPrevious className=" cursor-pointer lg:hidden block absolute translate-x-8 z-10 bg-[#F67D30] text-white" />
-        <CarouselNext className=" cursor pointer lg:hidden block absolute -translate-x-8 z-10 bg-[#F67D30] text-white" />
-        <CarouselContent className="lg:gap-[25px] ">
+        <CarouselPrevious className=" cursor-pointer md:hidden block absolute translate-x-8 z-10 bg-[#F67D30] text-white" />
+        <CarouselNext className=" cursor pointer md:hidden block absolute -translate-x-8 z-10 bg-[#F67D30] text-white" />
+        <CarouselContent className="md:gap-[25px] ">
           {serviceSlides.map((service, index) => (
             <CarouselItem
               key={index}
-              className="lg:basis-[280px] flex-shrink-0 flex flex-col gap-[10px]"
+              className="md:basis-[280px] flex-shrink-0 flex flex-col gap-[10px]"
             >
               <Image
                 src={service.src}
