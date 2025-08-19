@@ -38,11 +38,11 @@ export const metadata: Metadata = {
     title: "Kalibre CoSec | Corporate Services for Growth-Stage Companies",
     description:
       "Expert-led governance, ESG, and compliance frameworks that strengthen accountability and support multi-jurisdictional growth.",
-    url: "https://kalibre-cosec-services.vercel.app/",
+    url: "https://www.kalibrecosec.org/",
     siteName: "Kalibre CoSec",
     images: [
       {
-        url: "/display-logo.png",
+        url: "/display-logo.svg",
         width: 1200,
         height: 630,
         alt: "Kalibre CoSec Logo",
