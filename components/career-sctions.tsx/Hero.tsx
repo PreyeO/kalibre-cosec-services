@@ -7,8 +7,8 @@ import Heading from "../ui/typography/Heading";
 
 const Hero = () => {
   return (
-    <section className="md:mt-[133px] mt-[100px] md:px-[50px] px-[22px] ">
-      <div className="flex md:flex-nowrap flex-wrap items-center gap-[30px] md:gap-0 justify-center md:justify-between ">
+    <section className="md:mt-[133px] mt-[100px] md:px-[50px] px-[20px] ">
+      <div className="flex lg:flex-nowrap flex-wrap items-center gap-[30px] lg:gap-0 justify-center lg:justify-between ">
         <div className="flex flex-col gap-[16px] justify-center text-center md:text-left">
           <div className="flex-col gap-[10px] w-[346px] md:w-[636px]">
             <ColoredTitle title="careers at Kalibre CoSec" />
@@ -34,7 +34,7 @@ const Hero = () => {
           alt="image of staff"
           width={632}
           height={400}
-          className="max-w-[632px] max-h-[400px] object-cover rounded-[30px]"
+          className="w-full max-h-[400px] object-cover rounded-[30px]"
           priority
         />
       </div>

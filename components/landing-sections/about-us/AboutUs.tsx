@@ -32,28 +32,31 @@ const AboutUs = () => {
           Corporate Governance & ESG Excellence
         </span>
       </p>
-      <div className=" items-stretch flex mt-[30px] lg:mt-[100px] md:mt-[50px] justify-start gap-6 lg:gap-8 flex-col xl:flex-row ">
-        <div className="flex items-center justify-center w-full rounded-[30px] border border-[#A8A9AD]/30 p-5">
+      <div className="items-stretch flex mt-[30px] lg:mt-[100px] md:mt-[50px] justify-start gap-6 lg:gap-8 flex-col xl:flex-row">
+        {/* Image container */}
+        <div className="flex items-center justify-center rounded-[30px] border border-[#A8A9AD]/30 p-5 w-full xl:w-[50%]">
           <Image
             src="/about-us.jpg"
             alt="About us image"
             width={514}
             height={514}
             priority
-            className="rounded-[15px] max-w-[514px] max-h-[514px] object-cover md:block hidden"
+            className="rounded-[15px] w-full h-auto object-cover hidden lg:block"
           />
-
           <Image
             src="/about-us.jpg"
             alt="About us image"
             width={330}
             height={330}
             priority
-            className="rounded-[15px] w-full h-auto object-cover md:hidden block"
+            className="rounded-[15px] w-full h-auto object-cover block lg:hidden"
           />
         </div>
-        <div className="flex flex-col gap-6 md:gap-[50px] flex-grow">
-          <div className="max-w-[704px]">
+
+        {/* Text container */}
+        <div className="flex flex-col gap-6 md:gap-[50px] flex-1 xl:w-[50%]">
+          {/* Who We Are */}
+          <div className="w-full">
             <Heading
               heading="Who We Are"
               className="text-lg md:text-[27px] text-[#122847]"
@@ -69,22 +72,23 @@ const AboutUs = () => {
               global markets, ensuring clients operate with transparency,
               resilience and regulatory foresight. Whether preparing for
               investment, managing multi-jurisdictional growth or elevating
-              governance maturity, Kalibre elivers more than advice, we deliver
+              governance maturity, Kalibre delivers more than advice, we deliver
               embedded solutions that support long-term success.
             </BodyContent>
           </div>
 
-          <div className="flex justify-start gap-[16px] md:gap-[32px]  items-center flex-wrap md:flex-nowrap ">
+          {/* Mission & Vision */}
+          <div className="flex justify-start gap-[16px] md:gap-[32px] items-stretch flex-wrap md:flex-nowrap">
             <IdentityCard
               text="To empower businesses with strategic governance, ESG and compliance solutions that 
-              strengthen accountability, reduce risk and drive sustainable corporate performance across markets."
+        strengthen accountability, reduce risk and drive sustainable corporate performance across markets."
               title="Our Mission"
             />
             <IdentityCard
               title="Our Vision"
               text="To become the leading corporate services partner for growth-stage companies, investors 
-              and institutions across Africa and beyond, 
-              known for building governance-led, investment-ready and resilient organizations."
+        and institutions across Africa and beyond, 
+        known for building governance-led, investment-ready and resilient organizations."
             />
           </div>
         </div>

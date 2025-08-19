@@ -15,7 +15,7 @@ const WhyUsCard: React.FC<WhyUsCardProps> = ({
 }) => {
   return (
     <div
-      className={` ${className} xl:max-w-[400px] max-w-[350px] h-[233px] bg-white border border-[#BCC4DC] rounded-[16px] lg:px-[30px] px-3 flex flex-col lg:items-center  py-[20px]  ms-[border-image-source:linear-gradient(180.01deg,_#F67D30_26.49%,_#1E3A8A_117.49%)] [border-image-slice:1]   [border-image-repeat:round]`}
+      className={` ${className} xl:max-w-[400px] max-w-[350px] h-auto bg-white border border-[#BCC4DC] rounded-[16px] lg:px-[30px] px-3 flex flex-col lg:items-center  py-[20px]  ms-[border-image-source:linear-gradient(180.01deg,_#F67D30_26.49%,_#1E3A8A_117.49%)] [border-image-slice:1]   [border-image-repeat:round]`}
     >
       {/* Icon */}
       <div className="w-[40px] lg:w-[50px] h-[40px] lg:h-[50px]  bg-[#A8A9AD]/10 flex flex-col justify-center items-center rounded-[16px]">

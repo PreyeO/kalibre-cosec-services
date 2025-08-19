@@ -35,7 +35,7 @@ const Testimonials = () => {
 
   return (
     <section className="bg-white md:px-[50px] px-5 md:pt-[50px] pt-[35px] pb-[35px] md:pb-[52px]">
-      <div className="w-[256px] lg:w-[536px] flex flex-col gap-[10px] mb-[30px] lg:mb-0">
+      <div className="w-[256px] md:w-[536px] flex flex-col gap-[10px] mb-[30px] lg:mb-0">
         <ColoredTitle title="REAL STORIES, REAL RESULTS" />
         <Heading
           className="text-[30px] md:text-[64px] leading-[34px] md:leading-[78px] text-[rgba(18,40,71,1)]"

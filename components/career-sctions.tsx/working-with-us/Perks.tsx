@@ -7,15 +7,15 @@ import { perks } from "@/data";
 // bg-[linear-gradient(180deg,_#BFC6DD_0%,_#FFFFFF_69.09%)]
 const Perks = () => {
   return (
-    <section className="pt-[30px] md:pt-[100px] md:pb-[50px] ">
+    <section className="pt-[30px] md:pt-[100px] lg:pb-[50px] ">
       <div className=" md:mx-[50px] mx-[20px]">
-        <div className=" bg-white/30 flex md:justify-evenly justify-start md:px-[50px]  md:py-[50px] rounded-[40px] md:flex-nowrap flex-wrap ">
-          <div className=" flex-col gap-[10px] md:max-w-[580px] max-w-[236px] ">
+        <div className=" bg-white/30 flex gap-6 lg:gap-[40px] justify-start md:px-[50px]  md:py-[50px] rounded-[40px] md:flex-nowrap flex-wrap ">
+          <div className=" flex-col gap-[10px] max-w-[580px] ">
             <ColoredTitle title="perks" />
 
             <Heading
               heading="Why  work at kalibre cosec?"
-              className="md:leading-[68px] text-[#122847] text-[32px] leading-[38px] md:text-[72px]"
+              className="lg:leading-[68px] text-[#122847] text-[32px] leading-[38px] lg:text-[72px]"
             />
           </div>
           <div className="flex flex-col max-w-[621px]">
