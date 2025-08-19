@@ -31,7 +31,7 @@ import {
 
 export const navLinks = [
   { name: "Home", href: "/" },
-  { name: "About Us", href: "#about_us" },
+  { name: "About Us", href: "/#about_us" },
   {
     name: "Services",
     href: "#services",
@@ -67,7 +67,7 @@ export const navLinks = [
     ],
   },
   { name: "Careers", href: "/careers" },
-  { name: "Resources", href: "/resources" },
+  { name: "Resources", href: "http://www.bbinsights.online/" },
 ];
 
 export const slides = [

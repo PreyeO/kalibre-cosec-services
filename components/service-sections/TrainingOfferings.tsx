@@ -21,12 +21,12 @@ const TrainingOfferingsSection = () => {
 
       <div className="relative flex md:gap-[30px] flex-wrap lg:flex-nowrap">
         {/* Left Card */}
-        <div className="mt-[30px] md:mt-[25px] w-full border border-[#BCC4DC]/40 rounded-[20px] py-6 pl-6">
+        <div className="mt-[30px] md:mt-[25px] w-full border border-[#BCC4DC]/40 rounded-[20px] py-6 md:pl-6 px-3 md:px-0">
           <ColoredTitle title="Training offering" />
           {trainings.map((training, index) => (
             <div key={index} className="max-w-[455px] pt-[25px] ">
               <div className="flex gap-[10px]  items-center ">
-                <span className="flex justify-center items-center w-[34px] h-[34px] border border-[#BCC4DC] rounded-full text-[13px] font-tetiary font-normal">
+                <span className="flex justify-center items-center w-[34px] h-[34px] flex-shrink-0 border border-[#BCC4DC] rounded-full text-[13px] font-tetiary font-normal">
                   {training.digit}
                 </span>
                 <p className="leading-6 font-primary font-medium md:text-base text-sm">
@@ -49,12 +49,16 @@ const TrainingOfferingsSection = () => {
         </div>
 
         {/* Right Card */}
-        <div className="mt-[30px] md:mt-[25px]  w-full border border-[#BCC4DC]/40 rounded-[20px] py-6 pl-6">
+        <div className="mt-[30px] md:mt-[25px]  w-full border border-[#BCC4DC]/40 rounded-[20px] py-6  md:pl-6 px-3 md:px-0">
           <ColoredTitle title="Delivery Formats" />
           {deliveries.map((delivery, index) => (
             <div key={index} className="max-w-[455px] pt-[25px]">
               <div className="flex gap-[10px] items-center ">
-                <Sparkles color="#fef9c2" className="" size={24} />
+                <Sparkles
+                  color="#fef9c2"
+                  className="w-6 h-6 flex-shrink-0"
+                  size={24}
+                />
                 <p className="leading-6 font-primary font-medium md:text-base text-sm">
                   {delivery.title}
                 </p>

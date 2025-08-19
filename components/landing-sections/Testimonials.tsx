@@ -49,7 +49,7 @@ const Testimonials = () => {
           <CarouselContent>
             {clientTestimonials.map((testimonial, index) => (
               <CarouselItem key={index}>
-                <div className="flex flex-col gap-[16px] font-primary w-[314px] h-[280px] border border-[#A8A9AD]/30 rounded-[15px] px-[25px] pt-5">
+                <div className="flex flex-col gap-[16px] font-primary md:w-[314px] h-[300px] border border-[#A8A9AD]/30 rounded-[15px] px-[25px] pt-5">
                   <div className="flex gap-[10px] items-center">
                     <Avatar className="w-[52px] h-[52px]">
                       <AvatarImage src={testimonial.src} />

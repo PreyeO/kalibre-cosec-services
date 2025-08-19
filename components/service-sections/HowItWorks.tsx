@@ -37,7 +37,7 @@ const HowItWorksSection: React.FC<HowItWorksStepsProps> = ({
         {steps.map((step, index) => (
           <div
             key={index}
-            className={`lg:bg-[#001529] md:h-[300px] md:w-[300px]  xl:h-[320px] xl:w-[320px]  w-[270px] h-[270px] rounded-full border flex-shrink-0 flex flex-col items-start lg:py-[64px] xl:px-[60px] px-[43px] py-[49px] justify-start z-[1] ${
+            className={`lg:bg-[#001529]  md:w-[300px] md:h-[300px]   lg:h-[310px]  xl:w-[320px] xl:h-[320px]  w-[270px] h-auto rounded-full border flex-shrink-0 flex flex-col xl:items-start lg:py-[64px] xl:px-[60px]  items-center py-[49px] lg:justify-start justify-center z-[1] ${
               index !== 0
                 ? "xl:ml-[-40px] lg:ml-[-80px] mt-[-80px] md:mt-0 lg:mt-0"
                 : ""
@@ -51,7 +51,7 @@ const HowItWorksSection: React.FC<HowItWorksStepsProps> = ({
                 {step.title}
               </h4>
             </div>
-            <p className="pt-[6px] w-[200px] font-primary font-normal leading-[22px] text-sm text-white">
+            <p className="pt-[6px] md:w-[200px] w-[204px]  font-primary font-normal leading-[22px] text-sm text-white">
               {step.description}
             </p>
           </div>

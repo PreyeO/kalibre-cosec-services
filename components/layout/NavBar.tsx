@@ -72,18 +72,31 @@ const NavBar = () => {
                 <NavigationMenuItem key={link.name}>
                   <NavigationMenuLink
                     asChild
-                    className=" hover:bg-[#FF914D] hover:text-white"
+                    className=" hover:bg-[#FF914D] hover:text-white "
                   >
-                    <Link
-                      href={link.href}
-                      className={`px-4 py-2 text-sm font-medium transition-colors ${
-                        pathname === link.href
-                          ? "text-[#F67D30] focus:text-white focus:bg-[#F67D30]"
-                          : " hover:text-[#F67D30]  "
-                      }`}
-                    >
-                      {link.name}
-                    </Link>
+                    {link.href.startsWith("http") ? (
+                      // External link → <a>
+                      <a
+                        href={link.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="px-4 py-2 text-sm font-medium transition-colors hover:text-[#F67D30]"
+                      >
+                        {link.name}
+                      </a>
+                    ) : (
+                      // Internal link → <Link>
+                      <Link
+                        href={link.href}
+                        className={`px-4 py-2 text-sm font-medium transition-colors  ${
+                          pathname === link.href
+                            ? "text-[#F67D30] focus:text-white focus:bg-[#F67D30]"
+                            : " hover:text-[#F67D30]"
+                        }`}
+                      >
+                        {link.name}
+                      </Link>
+                    )}
                   </NavigationMenuLink>
                 </NavigationMenuItem>
               )
@@ -144,10 +157,22 @@ const NavBar = () => {
                         {link.name}
                         <ChevronRight size={24} />
                       </button>
+                    ) : link.href.startsWith("http") ? (
+                      // External link → <a>
+                      <a
+                        key={link.name}
+                        href={link.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-[#122847] hover:text-[#F67D30]"
+                      >
+                        {link.name}
+                      </a>
                     ) : (
                       <Link
                         key={link.name}
                         href={link.href}
+                        onClick={() => setOpen(false)}
                         className={` ${
                           pathname === link.href
                             ? "text-[#F67D30] "
@@ -174,6 +199,7 @@ const NavBar = () => {
                       <Link
                         key={sublink.name}
                         href={sublink.href}
+                        onClick={() => setOpen(false)}
                         className={`transition-colors ${
                           pathname === sublink.href
                             ? "text-[#F67D30]"

@@ -4,7 +4,7 @@ import NewsletterForm from "./NewsletterForm";
 
 const NewsLetter = () => {
   return (
-    <section className="bg-[#1E3A8A] md:px-[50px] px-5 md:py-[50px] pt-[35px]   ">
+    <section className="bg-[#1E3A8A] md:px-[50px] px-5 md:py-[50px] pt-[35px]  ">
       <div className="md:flex flex-row ">
         <div className="w-[256px] md:w-[640px] flex flex-col gap-[10px] mb-[30px] lg:mb-0 ">
           <ColoredTitle title="SUBSCRIBE TO OUR Newsletter" />
@@ -25,7 +25,7 @@ const NewsLetter = () => {
           </div>
         </div>
         <div
-          className="min-h-[300px] bg-[url('/news-image.svg')] bg-cover bg-center bg-no-repeat mix-blend-overlay w-full"
+          className="md:h-[300px] h-[217px] bg-[url('/news-image.svg')] bg-cover bg-center bg-no-repeat mix-blend-overlay w-full"
           aria-hidden="true"
         />
       </div>
