@@ -19,7 +19,7 @@ const NewsLetter = () => {
               <span className="font-semibold text-[#F67D30]">
                 Boardroom & Beyond Insights
               </span>{" "}
-              you agree to the processing of our personal data as describe on
+              you agree to the processing of your personal data as described on
               our privacy policy
             </p>
           </div>

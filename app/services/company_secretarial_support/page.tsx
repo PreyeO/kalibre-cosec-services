@@ -15,7 +15,7 @@ const page = () => {
         src="/company-secretary.jpg"
         service="SECRETARIAL & ENTITY MANAGEMENT "
         content="Specialist support across company secretarial, regulatory and entity 
-        anagement functions to maintain corporate integrity and enable seamless board and 
+        management functions to maintain corporate integrity and enable seamless board and 
         operational execution."
         span="COMPANY  "
         label="Get Started"
@@ -33,9 +33,8 @@ const page = () => {
         <SolutionsSection solutions={secreterailSolutions} />
       </div>
       <HowItWorksSection
-        highlightedText="Our governance approach"
-        subheading="is built for scale, to ensure your board and governance 
-        framework evolve with your business."
+        highlightedText="Our approach"
+        subheading="is structured, proactive and tailored to ensure seamless compliance and governance for your business."
         steps={secreterialServiceSteps}
       />
       <CTASection

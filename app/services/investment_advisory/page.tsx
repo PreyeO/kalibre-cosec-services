@@ -25,7 +25,7 @@ const page = () => {
         <OurPhilosophySection
           philosophy="In today’s funding environment, investors are scrutinizing boards, 
           compliance frameworks and company structure as rigorously as they evaluate financials. 
-          alibre CoSec supports startups and growth-stage businesses in preparing for capital raises, 
+          Kalibre CoSec supports startups and growth-stage businesses in preparing for capital raises, 
           investor negotiations and strategic transactions by strengthening their governance 
           infrastructure and aligning their corporate structures with investor demands."
         />

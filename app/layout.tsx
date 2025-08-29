@@ -27,23 +27,24 @@ const poppins = Poppins({
 
 // Metadata for SEO and social sharing
 export const metadata: Metadata = {
-  title: "Kalibre CoSec | Strategic Corporate Governance & Global Compliance",
+  title: "Kalibre CoSec | Strategic Corporate Services for Scaling Businesses",
   description:
-    "Kalibre CoSec empowers businesses with strategic governance, ESG, and compliance solutions to scale confidently across Africa and global markets.",
+    "Kalibre CoSec provides entity management, ESG solutions and fundraising support to help founders raise capital & scale confidently across Africa and global markets.",
   icons: {
     icon: "/logo.svg",
     shortcut: "/logo.svg",
     apple: "/logo.svg",
   },
   openGraph: {
-    title: "Kalibre CoSec | Corporate Services for Growth-Stage Companies",
+    title:
+      "Kalibre CoSec | Strategic Corporate Services for Scaling Businesses",
     description:
-      "Expert-led governance, ESG, and compliance frameworks that strengthen accountability and support multi-jurisdictional growth.",
+      "Kalibre CoSec provides entity management, ESG solutions and fundraising support to help founders raise capital & scale confidently across Africa and global markets.",
     url: "https://www.kalibrecosec.org/",
     siteName: "Kalibre CoSec",
     images: [
       {
-        url: "/display-logo.svg",
+        url: "/logo.svg",
         width: 1200,
         height: 630,
         alt: "Kalibre CoSec Logo",
@@ -53,11 +54,12 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Kalibre CoSec | Strategic Corporate Services",
+    title:
+      "Kalibre CoSec | Strategic Corporate Services for Scaling Businesses",
     description:
-      "Helping businesses and investors operate with transparency, resilience, and regulatory foresight.",
+      "Kalibre CoSec provides entity management, ESG solutions and fundraising support to help founders raise capital & scale confidently across Africa and global markets.",
     images: ["/logo.svg"],
-    creator: "@kalibresec",
+    creator: "@kalibre Cosec",
   },
 };
 

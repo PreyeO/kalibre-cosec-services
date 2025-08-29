@@ -24,7 +24,7 @@ const page = () => {
         <OurPhilosophySection
           philosophy="At Kalibre CoSec, we see ESG not just as a reporting requirement 
         but as a strategic asset. We help businesses embed sustainability into their governance and 
-        perations, align with global standards and build lasting trust with investors, regulators 
+        operations, align with global standards and build lasting trust with investors, regulators 
         and stakeholders. Our approach supports startups, scale-ups and corporates in turning ESG 
         from a checkbox into a driver of purpose, resilience and growth"
         />

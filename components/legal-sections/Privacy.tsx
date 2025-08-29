@@ -74,7 +74,7 @@ const PrivacySection = () => {
             content="Kalibre may share your information with trusted service providers, such as IT hosts, 
             cloud service platforms, payment processors, legal advisors and marketing partners. 
             These parties are obligated to protect your data under strict confidentiality and comply 
-            ith applicable data protection laws. We do not sell, trade, or rent your personal data to
+            with applicable data protection laws. We do not sell, trade, or rent your personal data to
              any third parties. Disclosure of your data may also be required by law enforcement, 
              regulatory authorities, or courts in compliance with lawful requests."
             heading="4. Data Sharing and Third Parties"
@@ -123,7 +123,7 @@ const PrivacySection = () => {
             content="Our services are not directed at children under the age of 18. We do not knowingly 
             collect personal data from minors. If you believe we have inadvertently collected such data, 
             please notify us immediately so we can take prompt action to remove it."
-            heading="10. Children’s Privacys"
+            heading="10. Children’s Privacy"
           />
           <TextGroup
             content="We may update this Privacy Policy periodically to reflect changes in legal 
@@ -144,7 +144,8 @@ const PrivacySection = () => {
               <br />
               Kalibre CoSec Limited
               <br />
-              Email:
+              Email:info@kalibrecosec.org
+              <br />
               <a
                 href="https://www.kalibrecosec.org"
                 target="_blank"

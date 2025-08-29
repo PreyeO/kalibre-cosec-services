@@ -29,7 +29,7 @@ const AboutUs = () => {
       <p className="leading-[120%] font-primary font-light md:text-sm text-[12px] text-[#737373] w-[181px] md:w-[307px]  pt-[21px] md:pt-[50px]">
         Your Trusted Partner in{" "}
         <span className="text-[#F67D30]">
-          Corporate Governance & ESG Excellence
+          Building Investor-Ready, Compliant & Sustainable Businesses
         </span>
       </p>
       <div className="items-stretch flex mt-[30px] lg:mt-[100px] md:mt-[50px] justify-start gap-6 lg:gap-8 flex-col xl:flex-row">
@@ -72,8 +72,8 @@ const AboutUs = () => {
               global markets, ensuring clients operate with transparency,
               resilience and regulatory foresight. Whether preparing for
               investment, managing multi-jurisdictional growth or elevating
-              governance maturity, Kalibre delivers more than advice, we deliver
-              embedded solutions that support long-term success.
+              governance maturity, Kalibre CoSec delivers more than advice, we
+              deliver embedded solutions that support long-term success.
             </BodyContent>
           </div>
 

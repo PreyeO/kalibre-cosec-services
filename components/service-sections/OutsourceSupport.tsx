@@ -1,7 +1,6 @@
 import React from "react";
 import ServiceHeading from "../ui/typography/service-heading";
 import { outsourceSolutions } from "@/data";
-// Remove Coins import since we use icons from outsourceSolutions data
 import ColoredTitle from "../ui/typography/colored-title";
 import BodyContent from "../ui/typography/BodyContent";
 
@@ -25,7 +24,7 @@ const OutsourceSupportSection = () => {
       </div>
       <div className="mt-[30px] md:mt-[50px] lg:border lg:border-[#BCC4DC]/40 rounded-[20px] w-full flex-wrap lg:flex-nowrap flex lg:py-[35px] lg:px-[35px] gap-[30px]">
         {outsourceSolutions.map((solution, index) => {
-          const Icon = solution.icon; // grab the icon component dynamically
+          const Icon = solution.icon;
           return (
             <div key={index} className="">
               <div className="w-[50px] h-[50px] rounded-md mb-[25px] bg-[#173b5b] flex justify-center items-center mx-auto lg:mx-0">

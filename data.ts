@@ -163,8 +163,8 @@ export const serviceSlides = [
 export const clientTestimonials = [
   {
     src: "https://github.com/shadcn.png",
-    alt: "Jane Doe",
-    name: "Jane Doe",
+    alt: "Fountain Meds Pharmaceutical Care Ltd",
+    name: "Fountain Meds Pharmaceutical Care Ltd",
     position: "Head of Legal, Fountain Meds",
     review:
       "The guidance we got from Kalibre CoSec helped us tighten our operational setup and prepare better for partner audits. They made the process easy to understand and more importantly, relevant to our kind of business.",
@@ -173,7 +173,7 @@ export const clientTestimonials = [
     src: "https://github.com/leerob.png",
     alt: "Funpe Osobu",
 
-    name: "Funpe sobu",
+    name: "Funpe Osobu",
     position: "CEO, Sleek6ix",
     review:
       "We’re not your typical corporate setup, so getting legal clarity for our creative business was a bit daunting. Kalibre CoSec helped us understand what actually matters and how to structure without killing our flexibility.",
@@ -196,32 +196,24 @@ export const clientTestimonials = [
   },
   {
     src: "https://github.com/shadcn.png",
-    alt: "Daniel Owuna,",
-    name: "Daniel Owuna,",
-    position: "CEO, Autstrip",
-    review:
-      "Easy to work with, always on time and understood exactly what we needed, even before we did. Kalibre CoSec made our business setup painless.",
-  },
-  {
-    src: "https://github.com/leerob.png",
-    alt: "John Doe",
-    name: "John Doe",
-    position: "VP Legal, FairMoney",
+    alt: "FairMoney,",
+    name: "FairMoney,",
+    position: "VP Legal & Compliance, FairMoney",
     review:
       "Kalibre CoSec’s advisory support around board structure, licensing readiness and ESG policy reviews helped us meet the demands of a fast-changing fintech landscape. Their pan-African understanding and precision are hard to come by",
   },
   {
-    src: "https://github.com/shadcn.png",
-    alt: "Jane Doe",
-    name: "Jane Doe",
+    src: "https://github.com/leerob.png",
+    alt: "Wallet Africa",
+    name: "Wallet Africa",
     position: "Co-founder, Wallet.ng",
     review:
-      "Before we entered new markets, Kalibre helped us understand what clean governance and documentation could do for investor confidence. They broke it down without legal jargon and that made a big difference.",
+      "Before we entered new markets, Kalibre CoSec helped us understand what clean governance and documentation could do for investor confidence. They broke it down without legal jargon and that made a big difference.",
   },
   {
     src: "https://github.com/shadcn.png",
-    alt: "John Doe",
-    name: "John Doe",
+    alt: "Mono",
+    name: "Mono",
     position: "CEO, Mono",
     review:
       "Kalibre CoSec gets startups. They balanced investor needs with our reality on the ground, no fluff, just real value",
@@ -308,7 +300,7 @@ export const sectors = [
     src: "/people.svg",
   },
   {
-    name: "agriculture",
+    name: "Agriculture",
     src: "/food.svg",
   },
 ];
@@ -324,7 +316,7 @@ export const esgSolutions = [
     title: "ESG Strategy & Roadmap Development",
     icon: MapPin,
     description:
-      "Moving from ambition to execution requires a focused ESG roadmap. Kalibre develops strategies that connect ESG themes with business goals, investor expectations and compliance triggers. With clear timelines,  leadership alignment, defined accountabilities and measurable outcomes, we enable implementation that is scalable, credible and responsive to evolving global and local demands.",
+      "Moving from ambition to execution requires a focused ESG roadmap. Kalibre CoSec develops strategies that connect ESG themes with business goals, investor expectations and compliance triggers. With clear timelines,  leadership alignment, defined accountabilities and measurable outcomes, we enable implementation that is scalable, credible and responsive to evolving global and local demands.",
   },
   {
     title: " Sustainability & ESG Reporting",
@@ -342,7 +334,7 @@ export const esgSolutions = [
     title: " ESG Board & Executive Training",
     icon: BookOpenCheck,
     description:
-      "Kalibre equips directors and executives with strategic ESG insights, tools, global reporting trends and regulatory developments. Our sessions are tailored to your industry, your organization's long-term goals and risk profile, enabling oversight bodies to engage ESG issues confidently and align decisions with corporate purpose and resilience.",
+      "Kalibre CoSec equips directors and executives with strategic ESG insights, tools, global reporting trends and regulatory developments. Our sessions are tailored to your industry, your organization's long-term goals and risk profile, enabling oversight bodies to engage ESG issues confidently and align decisions with corporate purpose and resilience.",
   },
 ];
 
@@ -450,7 +442,7 @@ export const secreterailSolutions = [
     title: "Meeting Support",
     icon: CalendarCheck,
     description:
-      "We provide end-to-end professional support for board, shareholders and committee meetings, including scheduling, agenda preparation, minute-taking, resolution drafting and follow-up tracking. Our service ensures governance continuity, accurate documentation, compliance with legal requirements and smooth facilitation of all corporate decision-making processes.ng governance continuity and compliance with relevant legal frameworks.",
+      "We provide end-to-end professional support for board, shareholders and committee meetings, including scheduling, agenda preparation, minute-taking, resolution drafting and follow-up tracking. Our service ensures governance continuity, accurate documentation, compliance with legal requirements and smooth facilitation of all corporate decision-making processes governance continuity and compliance with relevant legal frameworks.",
   },
   {
     title: "Entity Lifecycle Management",
@@ -489,7 +481,7 @@ export const secreterialServiceSteps = [
     title: "Compliance & Filings Setup",
     digit: "02",
     description:
-      "A customized compliance calendar is set up to align governance activities with regulatory deadlines and updates records as required.",
+      "A customized compliance calendar is set up to align governance activities with regulatory deadlines and update records as required.",
   },
   {
     title: "Ongoing Support & Advisory",
@@ -498,7 +490,7 @@ export const secreterialServiceSteps = [
       " Clients receive responsive, on-demand support for meeting administration, filings and governance record management.",
   },
   {
-    title: "Optional Retainery",
+    title: "Optional Retainer",
     digit: "04",
     description:
       "We offer quarterly or annual retainers for companies requiring continuous company secretarial oversight and governance tracking.",
@@ -549,7 +541,7 @@ export const investmentServiceSteps = [
     title: "Discovery",
     digit: "01",
     description:
-      " A comprehensive assessment of investor documentation, governance frameworks and capital structure to identify strengths and gaps.",
+      " A comprehensive assessment of startup documentation, governance frameworks and capital structure to identify strengths and gaps.",
   },
   {
     title: "Strategic Roadmap & Action Plan",
@@ -567,7 +559,7 @@ export const investmentServiceSteps = [
     title: "Post-Investment Support",
     digit: "04",
     description:
-      "Ongoing advisory to scale effectively and compliance systems in line with business growth and subsequent funding rounds.",
+      "Ongoing advisory on scaling effectively and developing compliance systems aligned with business growth and future funding rounds.",
   },
 ];
 
@@ -633,7 +625,7 @@ export const complianceServiceSteps = [
     title: "Ongoing Advisory",
     digit: "04",
     description:
-      "Clients may engage us on a project or retained basis to handle regulatory responses, licensing updates or coordination.",
+      "Clients may engage us on a project or retainer basis to manage regulatory responses, licensing updates, and related coordination.",
   },
 ];
 
@@ -677,7 +669,7 @@ export const deliveries = [
   {
     title:
       "Board Onboarding: Specialized training for newly appointed directors",
-    span: "04",
+    span: "Board Onboarding:",
   },
 ];
 
@@ -729,7 +721,7 @@ export const privacyListSeven = [
   "Rectify inaccurate or incomplete data",
   "Erase your data in certain circumstances",
   "Restrict or object to processing of your data",
-  "Request portability of your data to another providers",
+  "Request portability of your data to another provider",
   "Withdraw consent where processing is based on consent",
   "Lodge complaints with relevant data protection authorities",
 ];
@@ -737,12 +729,12 @@ export const privacyListSeven = [
 export const termsList = [
   {
     title:
-      " refers to any individual or legal entity engaging Kalibre’s services.",
+      " refers to any individual or legal entity engaging Kalibre CoSec's services.",
     span: "Client",
   },
   {
     title:
-      " means any professional or digital services provided by Kalibre including but not limited to corporate governance advisory, company secretarial services, compliance, investor readiness, outsourcing solutions, and investor matchmaking.",
+      " means any professional or digital services provided by Kalibre CoSec including but not limited to corporate governance advisory, company secretarial services, compliance, investor readiness, outsourcing solutions, and investor matchmaking.",
     span: " Services",
   },
   {
@@ -752,28 +744,34 @@ export const termsList = [
   },
   {
     title:
-      " means any data, documents, intellectual property, or other materials provided by the Client for use in connection with Kalibre’s Services.",
+      " means any data, documents, intellectual property, or other materials provided by the Client for use in connection with Kalibre CoSec's Services.",
     span: "Client Materials",
   },
 ];
 
 export const perks = [
   {
-    value: "FLEXIBLE WORK PLACE",
+    value: "Flexible Remote Work",
     details:
-      "We uphold the highest ethical standards, ensuring transparency, trust, and compliance at every level... Add your perks",
+      "We support flexible hours and fully remote options so you can work where and when you are most productive.",
     digit: "01",
   },
   {
-    value: "FLEXIBLE VACATION POLICY",
+    value: "Impact-Driven Work",
     details:
-      "We deliver world-class governance and compliance solutions with deep industry knowledge and strategic insight.... Add your perks.",
+      "Contribute to meaningful projects that shape the future of governance, compliance and business transformation across Africa and beyond.",
     digit: "02",
   },
   {
-    value: "FLEXIBLE VACATION POLICY",
+    value: "Collaborative Culture",
     details:
-      "We deliver world-class governance and compliance solutions with deep industry knowledge and strategic insight.... Add your perks.",
+      "We foster a supportive environment where your ideas are valued and teamwork drives success.",
     digit: "03",
+  },
+  {
+    value: "Competitive Benefits",
+    details:
+      "We offer market-aligned compensation and wellness benefits to keep you motivated and healthy.",
+    digit: "04",
   },
 ];

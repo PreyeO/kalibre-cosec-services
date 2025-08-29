@@ -14,7 +14,7 @@ const Perks = () => {
             <ColoredTitle title="perks" />
 
             <Heading
-              heading="Why  work at kalibre cosec?"
+              heading="Why work at kalibre Cosec?"
               className="lg:leading-[68px] text-[#122847] text-[32px] leading-[38px] lg:text-[72px]"
             />
           </div>

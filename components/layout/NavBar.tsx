@@ -41,74 +41,69 @@ const NavBar = () => {
   }, []);
 
   return (
-    <nav className="bg-[#F7F7F7] lg:bg-transparent absolute lg:pt-[54px] pt-0 h-[50px] md:h-[80px] flex items-center justify-between  w-full z-50 font-primary  px-5 lg:px-[50px] ">
+    <nav className="bg-[#F7F7F7] lg:bg-transparent relative h-[50px] md:h-[100px] flex items-center justify-between w-full z-50 font-primary px-5 lg:px-[50px]">
+      {/* Logo */}
       <Logo />
 
-      {/* Desktop Menu */}
-      <div className=" text-[#122847] hidden lg:flex px-[10px] md:px-2 font-normal text-lg h-[56px] rounded-[50px]  lg:w-[569px] md:w-[500px] justify-center items-center border border-[#E3E5E8] backdrop-blur-[10px] bg-white/60">
-        <NavigationMenu>
-          <NavigationMenuList>
-            {navLinks.map((link) =>
-              link.children ? (
-                <NavigationMenuItem key={link.name}>
-                  <NavigationMenuTrigger>{link.name}</NavigationMenuTrigger>
-                  <NavigationMenuContent className="bg-[#122847] text-base font-medium rounded-[30px] my-2 w-full">
-                    <div className="grid grid-cols-2 gap-3 p-6 w-[750px]">
-                      {link.children.map((sublink) => (
-                        <NavigationMenuLink
-                          key={sublink.name}
-                          asChild
-                          className="text-sm transition-colors text-white/70 "
-                        >
-                          <Link href={sublink.href} className="">
-                            {sublink.name}
-                          </Link>
-                        </NavigationMenuLink>
-                      ))}
-                    </div>
-                  </NavigationMenuContent>
-                </NavigationMenuItem>
-              ) : (
-                <NavigationMenuItem key={link.name}>
-                  <NavigationMenuLink
-                    asChild
-                    className=" hover:bg-[#FF914D] hover:text-white "
-                  >
-                    {link.href.startsWith("http") ? (
-                      // External link → <a>
-                      <a
-                        href={link.href}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="px-4 py-2 text-sm font-medium transition-colors hover:text-[#F67D30]"
-                      >
-                        {link.name}
-                      </a>
-                    ) : (
-                      // Internal link → <Link>
+      {/* Floating Menu */}
+      <div className="hidden lg:flex justify-center">
+        <div
+          className="fixed top-[60px] 
+      text-[#122847] font-normal text-lg h-[56px] rounded-[50px] 
+      w-[569px] flex justify-center items-center 
+      border border-[#E3E5E8] backdrop-blur-[10px] bg-white/60 px-2 z-50"
+        >
+          <NavigationMenu>
+            <NavigationMenuList>
+              {navLinks.map((link) =>
+                link.children ? (
+                  <NavigationMenuItem key={link.name}>
+                    <NavigationMenuTrigger>{link.name}</NavigationMenuTrigger>
+                    <NavigationMenuContent className="bg-[#122847] text-base font-medium rounded-[30px] my-2 w-full">
+                      <div className="grid grid-cols-2 gap-3 p-6 w-[750px]">
+                        {link.children.map((sublink) => (
+                          <NavigationMenuLink
+                            key={sublink.name}
+                            asChild
+                            className="text-sm transition-colors text-white/70"
+                          >
+                            <Link href={sublink.href}>{sublink.name}</Link>
+                          </NavigationMenuLink>
+                        ))}
+                      </div>
+                    </NavigationMenuContent>
+                  </NavigationMenuItem>
+                ) : (
+                  <NavigationMenuItem key={link.name}>
+                    <NavigationMenuLink
+                      asChild
+                      className="hover:bg-[#FF914D] hover:text-white"
+                    >
                       <Link
                         href={link.href}
-                        className={`px-4 py-2 text-sm font-medium transition-colors  ${
+                        className={`px-4 py-2 text-sm font-medium transition-colors ${
                           pathname === link.href
                             ? "text-[#F67D30] focus:text-white focus:bg-[#F67D30]"
-                            : " hover:text-[#F67D30]"
+                            : "hover:text-[#F67D30]"
                         }`}
                       >
                         {link.name}
                       </Link>
-                    )}
-                  </NavigationMenuLink>
-                </NavigationMenuItem>
-              )
-            )}
-          </NavigationMenuList>
-        </NavigationMenu>
+                    </NavigationMenuLink>
+                  </NavigationMenuItem>
+                )
+              )}
+            </NavigationMenuList>
+          </NavigationMenu>
+        </div>
       </div>
 
-      {/* Desktop CTA */}
+      {/* Right CTA */}
       <div className="hidden lg:block">
         <DiscoveryButton />
       </div>
+
+      {/* Mobile Menu ... unchanged */}
 
       {/* Mobile Menu */}
       <div className="lg:hidden">
@@ -202,8 +197,8 @@ const NavBar = () => {
                         onClick={() => setOpen(false)}
                         className={`transition-colors ${
                           pathname === sublink.href
-                            ? "text-[#F67D30]"
-                            : "text-[#122847] hover:text-[#F67D30]"
+                            ? "text-[#F67D30] "
+                            : "text-[#122847] hover:text-[#F67D30] "
                         }`}
                       >
                         {sublink.name}

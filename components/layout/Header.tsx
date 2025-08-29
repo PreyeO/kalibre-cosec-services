@@ -7,7 +7,7 @@ const Header = () => {
       <div className="flex items-center gap-5 font-secondary font-medium text-[12px]">
         <div className="flex items-center gap-[3px]">
           <Phone size={18} />
-          <p className="">+234802889040</p>
+          <p className="">+2348028890404</p>
         </div>
         <div className="border h-[17px] w-[1px]"></div>
         <div className="flex items-center gap-[3px]">

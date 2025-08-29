@@ -33,7 +33,7 @@ const page = () => {
       <CTASection
         heading="Shape Boardroom Excellence, Not Just Compliance"
         subheading="Equip your board and executives with 
-        strategic governance, ESG foresight and cross-market leadership capabilities.."
+        strategic governance, ESG foresight and cross-market leadership capabilities."
       />
     </main>
   );

@@ -15,17 +15,17 @@ const TermsSection = () => {
           />
           <BodyContent className="md:text-lg md:leading-[26px] text-[#3A3A3A] text-sm leading-[22px]">
             Welcome to Kalibre CoSec Limited{" "}
-            {`("Kalibre," "we," "us," or (our)`}
-            ). These Terms and Conditions {`(Terms)`} govern your access to and
-            use of our website, digital platforms, and professional services. By
-            visiting our website or engaging with our services, you agree to
-            comply with and be bound by these Terms. If you do not agree to
-            these Terms, please do not use our services.
+            {`("Kalibre", "we", "us" or ("our")`}
+            ). These Terms and Conditions <strong>{`(Terms)`}</strong> govern
+            your access to use of our website, digital platforms, and
+            professional services. By visiting our website or engaging with our
+            services, you agree to comply with and be bound by these Terms. If
+            you do not agree to these Terms, please do not use our services.
           </BodyContent>
         </div>
         <div className="flex flex-col md:gap-[25px] gap-4 md:pb-[50px] pb-6">
           <Heading
-            heading="Definitions"
+            heading="1. Definitions"
             className="text-[#122847] md:text-[54px] text-[32px] md:leading-[60px] leading-[38px]"
           />
           <ul className="flex flex-col gap-2 list-disc pl-8">
@@ -92,7 +92,7 @@ const TermsSection = () => {
           </div>
           <TextGroup
             content="Both parties agree to keep all confidential information secure and not disclose it to 
-            hird parties except as required by law. 
+            third parties except as required by law. 
             This obligation remains in effect indefinitely beyond the termination of services."
             heading="5. Confidentiality"
           />
@@ -189,7 +189,8 @@ const TermsSection = () => {
               <br />
               Kalibre CoSec Limited
               <br />
-              Email:
+              Email:info@kalibrecosec.org
+              <br />
               <a
                 href="https://www.kalibrecosec.org"
                 target="_blank"

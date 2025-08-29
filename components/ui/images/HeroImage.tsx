@@ -28,7 +28,7 @@ export default function HeroImage() {
   }, [api]);
 
   return (
-    <div className="w-screen overflow-hidden relative md:mt-[52px]  ">
+    <div className="w-screen overflow-hidden relative   ">
       <Carousel
         plugins={[
           Autoplay({

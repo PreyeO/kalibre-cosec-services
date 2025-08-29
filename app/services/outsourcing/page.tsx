@@ -15,9 +15,9 @@ const page = () => {
         content=" Scalable, compliant and efficient operational support for businesses building 
         lean structures across Africa and beyond."
         span="OUTSOURCING "
-        label="Download EOR Sheet"
+        label="Download EOR Information Sheet"
         className=" max-w-[695px] "
-        downloadUrl="/downloads/hr-guide.pdf"
+        downloadUrl="/EOR-SHEET.pdf"
       />
       <div className="service-bg-gradient relative z-10 opacity-0.3">
         <Sectors title="Our Clients Sectors" />

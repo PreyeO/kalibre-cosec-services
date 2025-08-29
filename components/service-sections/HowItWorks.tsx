@@ -23,7 +23,7 @@ const HowItWorksSection: React.FC<HowItWorksStepsProps> = ({
   return (
     <section className="bg-[#001529] md:py-[100px] py-[35px] px-5 md:px-[50px] xl:px-[50px] lg:px-[30px]">
       <div className="flex flex-col gap-[10px]">
-        <ColoredTitle title="HOW IT WORKS" />
+        <ColoredTitle title="HOW WE WORKS" />
 
         <h3 className="max-w-[593px] text-base md:text-[31px] font-primary font-light text-[#A8A9AD] leading-[120%]">
           {highlightedText && (

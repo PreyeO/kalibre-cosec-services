@@ -38,7 +38,7 @@ const TrainingOfferingsSection = () => {
         </div>
 
         {/* Arrow */}
-        <div className="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 z-10 hidden lg:block">
+        <div className="absolute left-1/2 -translate-x-[60%] top-1/2 -translate-y-1/2 z-10 hidden lg:block">
           <Image
             src="/arrow.png"
             alt="Arrow Icon"
@@ -59,7 +59,9 @@ const TrainingOfferingsSection = () => {
                   className="w-6 h-6 flex-shrink-0"
                   size={24}
                 />
+
                 <p className="leading-6 font-primary font-medium md:text-base text-sm">
+                  <span className=" font-bold">{delivery.span}</span>
                   {delivery.title}
                 </p>
               </div>

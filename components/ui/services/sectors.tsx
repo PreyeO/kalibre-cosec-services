@@ -16,7 +16,7 @@ const Sectors: React.FC<SectorsProps> = ({ title }) => {
 
       {/* Desktop View */}
       <div className="hidden md:block w-full">
-        <Marquee pauseOnClick pauseOnHover speed={50}>
+        <Marquee pauseOnClick pauseOnHover speed={50} autoFill>
           {sectors.map((sector, index) => (
             <div
               key={index}
