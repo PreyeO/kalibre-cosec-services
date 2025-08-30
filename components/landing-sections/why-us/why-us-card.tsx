@@ -3,7 +3,7 @@ import React from "react";
 interface WhyUsCardProps {
   title: string;
   content: string;
-  className: string;
+  className?: string;
   icon: React.ReactNode;
 }
 
@@ -15,15 +15,31 @@ const WhyUsCard: React.FC<WhyUsCardProps> = ({
 }) => {
   return (
     <div
-      className={` ${className} xl:max-w-[400px] max-w-[350px] h-auto bg-white border border-[#BCC4DC] rounded-[16px] lg:px-[30px] px-3 flex flex-col lg:items-center  py-[20px]  ms-[border-image-source:linear-gradient(180.01deg,_#F67D30_26.49%,_#1E3A8A_117.49%)] [border-image-slice:1]   [border-image-repeat:round]`}
+      className={`group ${className} xl:max-w-[400px] max-w-[350px] h-auto 
+        bg-white border border-[#BCC4DC] rounded-[16px] 
+        lg:px-[30px] px-3 flex flex-col py-[20px] 
+        transition-colors duration-300 hover:border-[#F67D30]`}
     >
-      {/* Icon */}
-      <div className="w-[40px] lg:w-[50px] h-[40px] lg:h-[50px]  bg-[#A8A9AD]/10 flex flex-col justify-center items-center rounded-[16px]">
-        {icon}
+      {/* Icon wrapper */}
+      <div
+        className="w-[40px] lg:w-[50px] h-[40px] lg:h-[50px] 
+        rounded-[16px] border border-[#BCC4DC] 
+        flex flex-col justify-center items-center 
+        transition-colors duration-300
+        group-hover:border-[#F67D30] group-hover:bg-[#F67D30]/20"
+      >
+        {/* Icon itself */}
+        <div
+          className="transition-colors duration-300 
+          text-black/60 group-hover:text-white 
+          fill-black/60 group-hover:fill-[#F67D30]"
+        >
+          {icon}
+        </div>
       </div>
 
       {/* Title and Content */}
-      <div className=" max-w-[309px] flex flex-col gap-[10px] justify-center  font-primary">
+      <div className="max-w-[309px] flex flex-col gap-[10px] justify-center font-primary mt-3">
         <h3 className="lg:text-[22px] text-lg font-semibold text-[#3A3A3A]">
           {title}
         </h3>

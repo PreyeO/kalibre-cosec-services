@@ -5,7 +5,7 @@ import React from "react";
 
 const WhyUsDesktopContainer = () => {
   return (
-    <div className="xl:left-28 md:left-28 lg:left-4   relative">
+    <div className="xl:left-28 md:left-28 lg:left-4 relative ">
       <WhyUsCard
         title="Integrity & Accountability"
         content="We go beyond compliance to embed governance as a growth enabler and investor signal"

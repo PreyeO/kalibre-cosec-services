@@ -8,10 +8,10 @@ import DiscoveryButton from "@/components/ui/buttons/discovery-button";
 
 const WhyUs = () => {
   return (
-    <section className="bg-gradient-to-b from-[#FFFFFF] to-[#E6E6E6] lg:px-[50px] px-5 md:pt-[50px] pt-[35px] pb-[35px] md:pb-[52px] ">
+    <section className="bg-gradient-to-b from-[#FFFFFF] to-[#E6E6E6] lg:px-[50px] px-5 md:pt-[50px] pt-[35px] pb-[35px] md:pb-0 ">
       <div className=" lg:flex lg:justify-evenly">
         <div className="lg:w-[536px] w-[201px]">
-          <ColoredTitle title="Kalibre CoSec Limited " />
+          <ColoredTitle title="KALIBRE COSEC LIMITED " />
           <div className="flex relative">
             <Heading
               className="text-[32px] lg:text-[64px] leading-[38px] lg:leading-[78px] text-[rgba(18,40,71,1)]"

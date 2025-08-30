@@ -18,7 +18,7 @@ function NavigationMenu({
       data-slot="navigation-menu"
       data-viewport={viewport}
       className={cn(
-        "group/navigation-menu relative flex max-w-max flex-1 items-center justify-center",
+        "group/navigation-menu relative flex max-w-max flex-1 items-center justify-center ",
         className
       )}
       {...props}
@@ -35,9 +35,9 @@ function NavigationMenuList({
 }: React.ComponentProps<typeof NavigationMenuPrimitive.List>) {
   return (
     <NavigationMenuPrimitive.List
-      data-slot="navigation-menu-list"
+      data-slot="navigation-menu-list "
       className={cn(
-        "group flex flex-1 list-none items-center justify-center gap-1 ",
+        "group flex flex-1 list-none items-center justify-center gap-1  ",
         className
       )}
       {...props}
@@ -51,7 +51,7 @@ function NavigationMenuItem({
 }: React.ComponentProps<typeof NavigationMenuPrimitive.Item>) {
   return (
     <NavigationMenuPrimitive.Item
-      data-slot="navigation-menu-item"
+      data-slot="navigation-menu-item "
       className={cn("relative", className)}
       {...props}
     />
@@ -59,7 +59,7 @@ function NavigationMenuItem({
 }
 
 const navigationMenuTriggerStyle = cva(
-  "group inline-flex h-9 w-max items-center justify-center rounded-md bg-transparent px-4 py-2 text-sm font-medium hover:text-white hover:bg-[#FF914D]  disabled:pointer-events-none disabled:opacity-50 data-[state=open]:hover:bg-[#FF914D] data-[state=open]:text-white data-[state=open]:focus:bg-[#FF914D] data-[state=open]:bg-[#FF914D] focus-visible:ring-ring/50 outline-none transition-[color,box-shadow] focus-visible:ring-[3px] focus-visible:outline-1 rounded-[20px] "
+  "group inline-flex h-9 w-max items-center justify-center rounded-md bg-transparent px-4 py-2  hover:text-white hover:bg-[#FF914D]  disabled:pointer-events-none disabled:opacity-50 data-[state=open]:hover:bg-[#FF914D] data-[state=open]:text-white data-[state=open]:focus:bg-[#FF914D] data-[state=open]:bg-[#FF914D] focus-visible:ring-ring/50 outline-none transition-[color,box-shadow] focus-visible:ring-[3px] focus-visible:outline-1 rounded-[20px] "
 );
 
 function NavigationMenuTrigger({
@@ -131,9 +131,9 @@ function NavigationMenuLink({
       className={cn(
         "cursor-pointer",
         "",
-        "focus:text-[#FF914D] hover:text-[#FF914D]",
+        "focus:text-[#FF914D] hover:text-[#FF914D] ",
         "rounded-[20px]",
-        "transition-all outline-none p-2 text-sm flex flex-col gap-1",
+        "transition-all outline-none p-2  flex flex-col gap-1",
         "focus-visible:ring-[3px] focus-visible:ring-ring/50",
         className
       )}

@@ -41,7 +41,7 @@ const NavBar = () => {
   }, []);
 
   return (
-    <nav className="bg-[#F7F7F7] lg:bg-transparent relative h-[50px] md:h-[100px] flex items-center justify-between w-full z-50 font-primary px-5 lg:px-[50px]">
+    <nav className="bg-[#F7F7F7]  lg:bg-transparent relative h-[50px] md:h-[100px] flex items-center justify-between w-full z-50 font-primary px-5 lg:px-[50px]">
       {/* Logo */}
       <Logo />
 
@@ -59,13 +59,13 @@ const NavBar = () => {
                 link.children ? (
                   <NavigationMenuItem key={link.name}>
                     <NavigationMenuTrigger>{link.name}</NavigationMenuTrigger>
-                    <NavigationMenuContent className="bg-[#122847] text-base font-medium rounded-[30px] my-2 w-full">
+                    <NavigationMenuContent className="bg-[#122847]  rounded-[30px] my-2 w-full">
                       <div className="grid grid-cols-2 gap-3 p-6 w-[750px]">
                         {link.children.map((sublink) => (
                           <NavigationMenuLink
                             key={sublink.name}
                             asChild
-                            className="text-sm transition-colors text-white/70"
+                            className="text-base font-medium transition-colors text-white/70"
                           >
                             <Link href={sublink.href}>{sublink.name}</Link>
                           </NavigationMenuLink>
@@ -102,8 +102,6 @@ const NavBar = () => {
       <div className="hidden lg:block">
         <DiscoveryButton />
       </div>
-
-      {/* Mobile Menu ... unchanged */}
 
       {/* Mobile Menu */}
       <div className="lg:hidden">

@@ -23,8 +23,8 @@ const ServiceCarousel = () => {
           loop: false,
         }}
       >
-        <div className="md:flex gap-5 absolute -top-10 left-2/2 -translate-x-12 hidden ">
-          <CarouselPrevious className=" cursor-pointer" />
+        <div className="md:flex gap-5 absolute -top-10 left-2/2 -translate-x-12 hidden  ">
+          <CarouselPrevious className=" cursor-pointer " />
           <CarouselNext className=" cursor-pointer" />
         </div>
         <CarouselPrevious className=" cursor-pointer md:hidden block absolute translate-x-8 z-10 bg-[#F67D30] text-white" />
@@ -33,18 +33,18 @@ const ServiceCarousel = () => {
           {serviceSlides.map((service, index) => (
             <CarouselItem
               key={index}
-              className="md:basis-[280px] flex-shrink-0 flex flex-col gap-[10px]"
+              className="md:basis-[430px] flex-shrink-0 flex flex-col gap-[10px]"
             >
               <Image
                 src={service.src}
                 alt={service.alt}
                 width={430}
                 height={330}
-                className="rounded-[15px] object-cover h-[330px] w-auto"
+                className="rounded-[15px] object-cover md:h-[330px] h-[262px] w-auto"
                 priority
               />
               <Link href={service.href}>
-                <p className="text-[#FF7A2A] w-[250px] font-primary font-medium lg:text-base text-[15px] leading-6">
+                <p className="text-[#FF7A2A]  font-primary font-medium lg:text-base text-[15px] leading-6">
                   {service.span}
                   <span className="text-white">{service.title}</span>
                 </p>

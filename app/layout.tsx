@@ -31,10 +31,10 @@ export const metadata: Metadata = {
   description:
     "Kalibre CoSec provides entity management, ESG solutions and fundraising support to help founders raise capital & scale confidently across Africa and global markets.",
   icons: {
-    icon: "/logo.svg",
-    shortcut: "/logo.svg",
-    apple: "/logo.svg",
+    icon: "/favicon.svg",
+    apple: "/favicon.svg",
   },
+
   openGraph: {
     title:
       "Kalibre CoSec | Strategic Corporate Services for Scaling Businesses",
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
     siteName: "Kalibre CoSec",
     images: [
       {
-        url: "/logo.svg",
+        url: "/logos.png",
         width: 1200,
         height: 630,
         alt: "Kalibre CoSec Logo",
@@ -58,7 +58,7 @@ export const metadata: Metadata = {
       "Kalibre CoSec | Strategic Corporate Services for Scaling Businesses",
     description:
       "Kalibre CoSec provides entity management, ESG solutions and fundraising support to help founders raise capital & scale confidently across Africa and global markets.",
-    images: ["/logo.svg"],
+    images: ["/logos.png"],
     creator: "@kalibre Cosec",
   },
 };
@@ -70,9 +70,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <head>
-        <link rel="icon" href="/logo.svg" type="image/svg+xml" />
-      </head>
       <body
         className={`${manrope.variable} ${montserrat.variable} ${poppins.variable}`}
       >
