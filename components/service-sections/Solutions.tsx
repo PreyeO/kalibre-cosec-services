@@ -41,14 +41,20 @@ const SolutionsSection: React.FC<SolutionsSectionProps> = ({ solutions }) => {
               <div className="max-w-[386px] flex flex-col justify-center items-center text-center mx-auto md:gap-[25px] gap-[10.22px]">
                 {/* Icon wrapper */}
                 <div
-                  className="w-[50px] h-[50px] rounded-md border border-[#BCC4DC] 
-                 flex items-center justify-center transition-colors duration-300 
-                 group-hover:border-[#F67D30] group-hover:bg-[#F67D30]/20"
+                  className="
+                    w-[50px] h-[50px] rounded-md border border-[#BCC4DC] 
+                    flex items-center justify-center transition-all duration-300 ease-in-out
+                    group-hover:border-[#F67D30] group-hover:bg-[#F67D30]/20
+                    group-hover:scale-110 group-hover:shadow-lg
+                  "
                 >
                   <Icon
-                    className="transition-colors duration-300 
-                   text-black/60 group-hover:text-white 
-                   fill-black/60 group-hover:fill-[#F67D30]"
+                    className="
+                      text-black group-hover:text-[#F67D30]
+                      
+                      transition-all duration-300 ease-in-out
+                      group-hover:translate-y-[-2px]
+                    "
                     size={26}
                   />
                 </div>
@@ -62,7 +68,7 @@ const SolutionsSection: React.FC<SolutionsSectionProps> = ({ solutions }) => {
                   >
                     {solution.title}
                   </h3>
-                  <p className="font-medium text-[#737373] t text-sm md:text-base md:leading-6 leading-[22px] pt-[10px]">
+                  <p className="font-medium text-[#737373] text-sm md:text-base md:leading-6 leading-[22px] pt-[10px]">
                     {solution.description}
                   </p>
                 </div>

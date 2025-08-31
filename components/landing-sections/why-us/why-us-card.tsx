@@ -22,17 +22,25 @@ const WhyUsCard: React.FC<WhyUsCardProps> = ({
     >
       {/* Icon wrapper */}
       <div
-        className="w-[40px] lg:w-[50px] h-[40px] lg:h-[50px] 
-        rounded-[16px] border border-[#BCC4DC] 
-        flex flex-col justify-center items-center 
-        transition-colors duration-300
-        group-hover:border-[#F67D30] group-hover:bg-[#F67D30]/20"
+        className="
+    w-[40px] lg:w-[50px] h-[40px] lg:h-[50px] 
+    rounded-[16px] border-[0.1px]
+    flex justify-center items-center 
+    transition-all duration-300 ease-in-out
+    group-hover:border-[#F67D30] 
+    group-hover:bg-[#F67D30]/20
+    group-hover:scale-110
+    group-hover:shadow-lg
+  "
       >
         {/* Icon itself */}
         <div
-          className="transition-colors duration-300 
-          text-black/60 group-hover:text-white 
-          fill-black/60 group-hover:fill-[#F67D30]"
+          className="
+      text-black group-hover:text-[#F67D30]
+      fill-black group-hover:fill-[#F67D30]
+      transition-all duration-300 ease-in-out
+      group-hover:translate-y-[-2px]
+    "
         >
           {icon}
         </div>
