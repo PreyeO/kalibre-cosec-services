@@ -14,15 +14,16 @@ const TermsSection = () => {
             className="text-[#122847] md:text-[54px] text-[32px] md:leading-[60px] leading-[38px] "
           />
           <BodyContent className="md:text-lg md:leading-[26px] text-[#3A3A3A] text-sm leading-[22px]">
-            Welcome to Kalibre CoSec Limited{" "}
-            {`("Kalibre", "we", "us" or ("our")`}
-            ). These Terms and Conditions <strong>{`(Terms)`}</strong> govern
-            your access to use of our website, digital platforms, and
+            Welcome to Kalibre CoSec Limited {`("Kalibre", "we", "us" or `}{" "}
+            <strong>{`"our"`}</strong>
+            {`)`}. These Terms and Conditions <strong>{`(Terms)`}</strong>{" "}
+            govern your access to use of our website, digital platforms, and
             professional services. By visiting our website or engaging with our
             services, you agree to comply with and be bound by these Terms. If
             you do not agree to these Terms, please do not use our services.
           </BodyContent>
         </div>
+
         <div className="flex flex-col md:gap-[25px] gap-4 md:pb-[50px] pb-6">
           <Heading
             heading="1. Definitions"
@@ -43,9 +44,9 @@ const TermsSection = () => {
         <div className="flex flex-col md:gap-[50px] gap-6 ">
           <TextGroup
             content="Kalibre provides advisory, compliance, secretarial, governance, investor readiness, 
-            outsourcing, and related professional services. Service details, deliverables, timelines, and fees will 
-            be outlined in a separate engagement agreement or contract. These Terms supplement those 
-            agreements."
+  outsourcing, and related professional Services. Service details, deliverables, timelines, and fees will 
+  be outlined in a separate engagement agreement or contract. These Terms supplement those 
+  agreements."
             heading="2. Scope of Services"
           />
           <BodyContent className="md:text-lg md:leading-[26px] text-[#3A3A3A] text-sm leading-[22px]">
@@ -54,13 +55,13 @@ const TermsSection = () => {
           </BodyContent>
           <TextGroup
             content="Clients must provide accurate, complete, and timely information necessary for 
-            service delivery. Failure to do so may result in delays or compromised outcomes. Clients 
-            warrant that they have authority to provide information and enter agreements."
+  Service delivery. Failure to do so may result in delays or compromised outcomes. Clients 
+  warrant that they have authority to provide information and enter agreements."
             heading="3.  Client Obligations"
           />
           <BodyContent className="md:text-lg md:leading-[26px] text-[#3A3A3A] text-sm leading-[22px]">
             Clients are responsible for maintaining their own internal controls
-            and compliance beyond the scope of Kalibre’s services.
+            and compliance beyond the scope of Kalibre’s Services.
           </BodyContent>
           <div className="flex flex-col md:gap-[25px] gap-4 md:pb-[50px] pb-6">
             <Heading
@@ -83,19 +84,20 @@ const TermsSection = () => {
               <br />
               <span className="font-bold">4.2 Client Materials</span>
               <br />
-              Clients retain all rights, title, and interest in their materials.
-              By providing materials to Kalibre, Clients grant Kalibre a
-              limited, non-exclusive, royalty-free license to use, reproduce,
-              and process such materials solely for the purpose of delivering
-              the agreed Services.
+              Clients retain all rights, title, and interest in their Client
+              Materials. By providing Client Materials to Kalibre, Clients grant
+              Kalibre a limited, non-exclusive, royalty-free license to use,
+              reproduce, and process such Client Materials solely for the
+              purpose of delivering the agreed Services.
             </BodyContent>
           </div>
           <TextGroup
-            content="Both parties agree to keep all confidential information secure and not disclose it to 
-            third parties except as required by law. 
-            This obligation remains in effect indefinitely beyond the termination of services."
+            content="Both parties agree to keep all Confidential Information secure and not disclose it to 
+  third parties except as required by law. 
+  This obligation remains in effect indefinitely beyond the termination of Services."
             heading="5. Confidentiality"
           />
+
           <TextGroup
             content="Kalibre processes personal data in compliance with applicable laws including the General 
             Data Protection Regulation (GDPR) and the Nigeria Data Protection Regulation (NDPR). 
@@ -115,16 +117,18 @@ const TermsSection = () => {
             heading="7. Fees and Payment Terms"
           />
           <TextGroup
-            content="Kalibre’s liability for any claims related to services shall be limited to the fees 
-            paid for the specific service giving rise to the claim. We disclaim liability for 
-            indirect, incidental, consequential, or punitive damages including loss of profits or goodwill."
+            content="Kalibre’s liability for any claims related to Services shall be limited to the fees 
+  paid for the specific Service giving rise to the claim. We disclaim liability for 
+  indirect, incidental, consequential, or punitive damages including loss of profits or goodwill."
             heading="8. Limitation of Liability"
           />
+
           <TextGroup
             content="Clients agree to indemnify, defend, and hold harmless Kalibre and its affiliates 
-            from claims, damages, liabilities, and expenses arising from client breaches of these Terms or unlawful conduct."
+  from claims, damages, liabilities, and expenses arising from Client breaches of these Terms or unlawful conduct."
             heading="9. Indemnification"
           />
+
           <TextGroup
             content="Kalibre facilitates introductions between Clients and potential investors but does 
             not guarantee funding, investment decisions, or the outcome of any investor relationship."
@@ -141,15 +145,17 @@ const TermsSection = () => {
           </BodyContent>
           <TextGroup
             content="Kalibre reserves the right to modify, suspend, or discontinue any part of its 
-            services or website without prior notice. We will endeavor to minimize disruptions and notify clients when feasible."
+  Services or website without prior notice. We will endeavor to minimize disruptions and notify Clients when feasible."
             heading="11.  Service Modifications and Interruptions"
           />
+
           <TextGroup
-            content="Either party may terminate service agreements in accordance with the terms in the 
-            engagement letter. Kalibre may suspend or terminate services immediately for non-payment, 
-            breach of Terms, or unlawful activity. Termination does not relieve clients of outstanding fees or confidentiality obligations."
+            content="Either party may terminate Service agreements in accordance with the terms in the 
+  engagement letter. Kalibre may suspend or terminate Services immediately for non-payment, 
+  breach of Terms, or unlawful activity. Termination does not relieve Clients of outstanding fees or confidentiality obligations."
             heading="12.  Termination and Suspension"
           />
+
           <TextGroup
             content="These Terms and any disputes arising hereunder are governed by the laws of the 
             Federal Republic of Nigeria. Both parties agree to submit to the exclusive jurisdiction of 
@@ -168,10 +174,11 @@ const TermsSection = () => {
             heading="15. Third-Party Websites and Services"
           />
           <TextGroup
-            content="Kalibre may update these Terms periodically to reflect changes in law, business practices, or service offerings. Updated 
-            Terms will be posted online with the effective date. Continued use of services constitutes acceptance."
+            content="Kalibre may update these Terms periodically to reflect changes in law, business practices, or Service offerings. Updated 
+  Terms will be posted online with the effective date. Continued use of Services constitutes acceptance."
             heading="16. Changes to Terms"
           />
+
           <TextGroup
             content="These Terms and any engagement agreements constitute the entire agreement between 
             the parties regarding the subject matter. Any prior understandings or agreements are superseded."

@@ -112,7 +112,7 @@ function NavigationMenuViewport({
       <NavigationMenuPrimitive.Viewport
         data-slot="navigation-menu-viewport"
         className={cn(
-          "origin-top-center  text-popover-foreground data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-90 relative mt-1.5 h-[var(--radix-navigation-menu-viewport-height)] w-full  md:w-[var(--radix-navigation-menu-viewport-width)]",
+          "origin-top-center text-popover-foreground data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-90 relative mt-1.5 h-[var(--radix-navigation-menu-viewport-height)] w-full  md:w-[var(--radix-navigation-menu-viewport-width)]",
           className
         )}
         {...props}
@@ -131,7 +131,7 @@ function NavigationMenuLink({
       className={cn(
         "cursor-pointer",
         "",
-        "focus:text-[#FF914D] hover:text-[#FF914D] ",
+        " hover:text-[#FF914D] ",
         "rounded-[20px]",
         "transition-all outline-none p-2  flex flex-col gap-1",
         "focus-visible:ring-[3px] focus-visible:ring-ring/50",

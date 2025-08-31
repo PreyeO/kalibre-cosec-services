@@ -13,6 +13,7 @@ import {
   CarouselPrevious,
   type CarouselApi,
 } from "../ui/carousels/carousel"; // adjust path
+import Autoplay from "embla-carousel-autoplay";
 
 const Testimonials = () => {
   const [api, setApi] = useState<CarouselApi | null>(null);
@@ -45,11 +46,19 @@ const Testimonials = () => {
 
       {/* Mobile Carousel */}
       <div className="mt-[30px] md:hidden">
-        <Carousel setApi={setApi}>
+        <Carousel
+          setApi={setApi}
+          plugins={[
+            Autoplay({
+              delay: 3000, // time per slide
+              stopOnInteraction: false, // keeps sliding even if user swipes
+            }),
+          ]}
+        >
           <CarouselContent>
             {clientTestimonials.map((testimonial, index) => (
               <CarouselItem key={index}>
-                <div className="f hover:border-[#F67D30] lex flex-col gap-[16px] font-primary md:w-[314px] h-[300px] border border-[#A8A9AD]/30 rounded-[15px] px-[25px] pt-5">
+                <div className="flex flex-col gap-[16px] font-primary md:w-[314px] h-[300px] border border-[#A8A9AD]/30 rounded-[15px] px-[25px] pt-5 hover:border-[#F67D30]">
                   <div className="flex gap-[10px] items-center">
                     <Avatar className="w-[52px] h-[52px]">
                       <AvatarImage src={testimonial.src} />
@@ -88,7 +97,6 @@ const Testimonials = () => {
           ))}
         </div>
       </div>
-
       {/* Desktop Marquee */}
       <div className="hidden md:block mt-[55px]">
         <Marquee pauseOnClick pauseOnHover gradientColor="#FFFFFF" gradient>

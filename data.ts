@@ -71,8 +71,16 @@ export const navLinks = [
 ];
 
 export const slides = [
-  { src: "/hero-image.svg", alt: "Hero Image 1" },
-  { src: "/hero-image.svg", alt: "Hero Image 2" },
+  {
+    src: "/hero-image.svg",
+    alt: "Hero Image 1",
+    mobile: "/hero-image-mobile.png",
+  },
+  {
+    src: "/hero-image.svg",
+    alt: "Hero Image 2",
+    mobile: "/hero-image-mobile.png",
+  },
 ];
 export const values = [
   {

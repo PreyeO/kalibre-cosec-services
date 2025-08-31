@@ -7,7 +7,7 @@ import Values from "./values";
 
 const AboutValues = () => {
   return (
-    <section className="bg-white md:px-[50px] px-[21px] md:pt-[50px] pt-[35px] pb-[35px] md:pb-[52px]  ">
+    <section className="bg-white md:px-[50px] px-[21px] pt-[35px] md:pt-0 pb-[35px] md:pb-[52px]  ">
       <div className=" lg:flex-nowrap md:gap-[50px] gap-6  items-center flex-wrap flex">
         <div className="flex flex-col md:gap-[50px] pb-6">
           <div>
@@ -32,10 +32,10 @@ const AboutValues = () => {
           <Image
             src="/values-image.jpg"
             alt="About us image"
-            width={667}
+            width={700}
             height={515}
             priority
-            className="rounded-[30px]  object-cover"
+            className="rounded-[30px] w-[700px]  object-cover"
           />
         </div>
       </div>

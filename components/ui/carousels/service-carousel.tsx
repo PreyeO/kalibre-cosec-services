@@ -27,8 +27,8 @@ const ServiceCarousel = () => {
           <CarouselPrevious className=" cursor-pointer " />
           <CarouselNext className=" cursor-pointer" />
         </div>
-        <CarouselPrevious className=" cursor-pointer md:hidden block absolute translate-x-8 z-10 bg-[#F67D30] text-white" />
-        <CarouselNext className=" cursor pointer md:hidden block absolute -translate-x-8 z-10 bg-[#F67D30] text-white" />
+        <CarouselPrevious className="flex items-center justify-center  cursor-pointer md:hidden  absolute translate-x-9 z-10 bg-[#F67D30] text-white rounded-full w-8 h-8" />
+        <CarouselNext className="cursor-pointer md:hidden flex items-center justify-center absolute  -translate-y-1/2 -translate-x-9 z-10 rounded-full bg-[#F67D30] text-white w-8 h-8" />
         <CarouselContent className="md:gap-[25px] ">
           {serviceSlides.map((service, index) => (
             <CarouselItem

@@ -48,7 +48,15 @@ export default function HeroImage() {
                 alt={slide.alt}
                 width={1440}
                 height={500}
-                className="w-full h-auto object-cover"
+                className="hidden md:block w-full h-auto object-cover"
+                priority={index === 0}
+              />
+              <Image
+                src={slide.mobile}
+                alt={slide.alt}
+                width={390}
+                height={135}
+                className="md:hidden block w-full h-auto object-cover"
                 priority={index === 0}
               />
             </CarouselItem>

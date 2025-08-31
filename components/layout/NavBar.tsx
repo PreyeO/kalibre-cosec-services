@@ -6,7 +6,7 @@ import Link from "next/link";
 import { navLinks } from "@/data";
 import Logo from "../ui/logo";
 import { Button } from "../ui/buttons/button";
-import { Menu, ChevronRight, MoveLeft } from "lucide-react";
+import { Menu, ChevronRight, MoveLeft, ArrowRight } from "lucide-react";
 import {
   Sheet,
   SheetTrigger,
@@ -60,14 +60,19 @@ const NavBar = () => {
                   <NavigationMenuItem key={link.name}>
                     <NavigationMenuTrigger>{link.name}</NavigationMenuTrigger>
                     <NavigationMenuContent className="bg-[#122847]  rounded-[30px] my-2 w-full">
-                      <div className="grid grid-cols-2 gap-3 p-6 w-[750px]">
+                      <div className="grid grid-cols-2 gap-2 p-3 w-[750px]">
                         {link.children.map((sublink) => (
                           <NavigationMenuLink
                             key={sublink.name}
                             asChild
-                            className="text-base font-medium transition-colors text-white/70"
+                            className="group text-base font-medium transition-colors text-white/70 hover:underline"
                           >
-                            <Link href={sublink.href}>{sublink.name}</Link>
+                            <Link href={sublink.href}>
+                              <span className="flex gap-[1px] items-center">
+                                {sublink.name}
+                                <ArrowRight className="w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity" />
+                              </span>
+                            </Link>
                           </NavigationMenuLink>
                         ))}
                       </div>
@@ -81,7 +86,7 @@ const NavBar = () => {
                     >
                       <Link
                         href={link.href}
-                        className={`px-4 py-2 text-sm font-medium transition-colors ${
+                        className={`px-4 py-2 text-base font-medium transition-colors ${
                           pathname === link.href
                             ? "text-[#F67D30] focus:text-white focus:bg-[#F67D30]"
                             : "hover:text-[#F67D30]"
@@ -145,7 +150,7 @@ const NavBar = () => {
                       <button
                         key={link.name}
                         onClick={() => setShowServices(true)}
-                        className="hover:text-[#F67D30] cursor-pointer text-[#122847]  text-lg flex justify-start font-medium items-center  gap-[6px] "
+                        className="hover:text-[#F67D30] hover:underline cursor-pointer text-[#122847]  text-lg flex justify-start font-medium items-center  gap-[6px] "
                       >
                         {link.name}
                         <ChevronRight size={24} />
@@ -157,7 +162,7 @@ const NavBar = () => {
                         href={link.href}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-[#122847] hover:text-[#F67D30]"
+                        className="text-[#122847] hover:text-[#F67D30] hover:underline"
                       >
                         {link.name}
                       </a>
@@ -168,8 +173,8 @@ const NavBar = () => {
                         onClick={() => setOpen(false)}
                         className={` ${
                           pathname === link.href
-                            ? "text-[#F67D30] "
-                            : "text-[#122847] hover:text-[#F67D30]"
+                            ? "text-[#F67D30] underline "
+                            : "text-[#122847] hover:text-[#F67D30] hover:underline"
                         }`}
                       >
                         {link.name}
@@ -196,7 +201,7 @@ const NavBar = () => {
                         className={`transition-colors ${
                           pathname === sublink.href
                             ? "text-[#F67D30] "
-                            : "text-[#122847] hover:text-[#F67D30] "
+                            : "text-[#122847] hover:text-[#F67D30] hover:underline "
                         }`}
                       >
                         {sublink.name}
