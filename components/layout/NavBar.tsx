@@ -27,6 +27,7 @@ import DiscoveryButton from "../ui/buttons/discovery-button";
 const NavBar = () => {
   const [open, setOpen] = useState(false);
   const [showServices, setShowServices] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
   const pathname = usePathname();
 
   useEffect(() => {
@@ -36,22 +37,38 @@ const NavBar = () => {
         setShowServices(false);
       }
     };
+
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 50); // adjust threshold if needed
+    };
+
     window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+      window.removeEventListener("scroll", handleScroll);
+    };
   }, []);
 
   return (
-    <nav className="bg-[#F7F7F7]  lg:bg-transparent relative h-[50px] md:h-[100px] flex items-center justify-between w-full z-50 font-primary px-5 lg:px-[50px]">
+    <nav className="bg-[#F7F7F7] lg:bg-transparent relative h-[50px] md:h-[100px] flex items-center justify-between w-full z-50 font-primary px-5 lg:px-[50px]">
       {/* Logo */}
       <Logo />
 
       {/* Floating Menu */}
-      <div className="hidden lg:flex justify-center">
+      <div className="hidden lg:flex flex-1 justify-center">
         <div
-          className="fixed top-[60px] 
-      text-[#122847]  text-lg h-[56px] rounded-[50px] 
-      w-[569px] flex justify-center items-center 
-      border border-[#E3E5E8] backdrop-blur-[10px] bg-white/60 px-2 z-50"
+          className={`
+            ${
+              scrolled
+                ? "fixed top-[60px] left-1/2 -translate-x-1/2"
+                : "absolute left-1/2 -translate-x-1/2 lg:static lg:translate-x-0 lg:mx-auto"
+            }
+            text-[#122847] text-lg h-[56px] rounded-[50px] 
+            w-full max-w-[569px] flex justify-center items-center 
+            border border-[#E3E5E8] backdrop-blur-[10px] bg-white/60 px-2 z-50
+          `}
         >
           <NavigationMenu>
             <NavigationMenuList>
@@ -59,13 +76,13 @@ const NavBar = () => {
                 link.children ? (
                   <NavigationMenuItem key={link.name}>
                     <NavigationMenuTrigger>{link.name}</NavigationMenuTrigger>
-                    <NavigationMenuContent className="bg-[#122847]  rounded-[30px] my-2 w-full">
+                    <NavigationMenuContent className="bg-[#122847] rounded-[30px] my-2 w-full">
                       <div className="grid grid-cols-2 gap-2 p-3 w-[750px]">
                         {link.children.map((sublink) => (
                           <NavigationMenuLink
                             key={sublink.name}
                             asChild
-                            className="group text-base  transition-colors text-white/70 hover:underline"
+                            className="group text-base transition-colors text-white/70 hover:underline"
                           >
                             <Link href={sublink.href}>
                               <span className="flex gap-[1px] items-center">
@@ -128,7 +145,7 @@ const NavBar = () => {
               {showServices ? (
                 <button
                   onClick={() => setShowServices(false)}
-                  className=" cursor-pointer flex items-center gap-1 text-[22px] text-[#F67D30] font-semibold"
+                  className="cursor-pointer flex items-center gap-1 text-[22px] text-[#F67D30] font-semibold"
                 >
                   <MoveLeft size={24} /> Services
                 </button>
@@ -150,13 +167,12 @@ const NavBar = () => {
                       <button
                         key={link.name}
                         onClick={() => setShowServices(true)}
-                        className="hover:text-[#F67D30] hover:underline cursor-pointer text-[#122847]  text-lg flex justify-start font-medium items-center  gap-[6px] "
+                        className="hover:text-[#F67D30] hover:underline cursor-pointer text-[#122847] text-lg flex justify-start font-medium items-center gap-[6px]"
                       >
                         {link.name}
                         <ChevronRight size={24} />
                       </button>
                     ) : link.href.startsWith("http") ? (
-                      // External link → <a>
                       <a
                         key={link.name}
                         href={link.href}
@@ -171,9 +187,9 @@ const NavBar = () => {
                         key={link.name}
                         href={link.href}
                         onClick={() => setOpen(false)}
-                        className={` ${
+                        className={`${
                           pathname === link.href
-                            ? "text-[#F67D30] underline "
+                            ? "text-[#F67D30] underline"
                             : "text-[#122847] hover:text-[#F67D30] hover:underline"
                         }`}
                       >
@@ -190,7 +206,7 @@ const NavBar = () => {
                   showServices ? "translate-x-0" : "translate-x-full"
                 }`}
               >
-                <div className="flex flex-col gap-[18px] px-6 pt-4 text-[14px]  font-medium ">
+                <div className="flex flex-col gap-[18px] px-6 pt-4 text-[14px] font-medium">
                   {navLinks
                     .find((link) => link.name === "Services")
                     ?.children?.map((sublink) => (
@@ -200,8 +216,8 @@ const NavBar = () => {
                         onClick={() => setOpen(false)}
                         className={`transition-colors ${
                           pathname === sublink.href
-                            ? "text-[#F67D30] "
-                            : "text-[#122847] hover:text-[#F67D30] hover:underline "
+                            ? "text-[#F67D30]"
+                            : "text-[#122847] hover:text-[#F67D30] hover:underline"
                         }`}
                       >
                         {sublink.name}
