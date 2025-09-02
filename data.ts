@@ -123,6 +123,8 @@ export const serviceSlides = [
     alt: "ESG Maturity image",
     span: "ESG",
     title: " & SUSTAINABILITY ADVISORY",
+    summary:
+      "Assess ESG maturity, prioritise material issues, design strategy and targets, and deliver credible reporting aligned with IFRS, GRI, and investor expectations.",
   },
   {
     src: "/service-slide2.jpg",
@@ -130,6 +132,8 @@ export const serviceSlides = [
     span: "CORPORATE GOVERNANCE ADVISORY",
     title: " & BOARD EFFECTIVENESS",
     href: "/services/corporate_governance_advisory",
+    summary:
+      "Build high-performing boards. We structure boards and committees, codify policies, and run evaluations with clear improvement roadmaps.",
   },
   {
     src: "/service-slide3.jpg",
@@ -137,6 +141,8 @@ export const serviceSlides = [
     span: "COMPANY SECRETARIAL",
     title: " & ENTITY MANAGEMENT",
     href: "/services/company_secretarial_support",
+    summary:
+      "Stay compliant across markets. We manage incorporations, filings, licences, resolutions, and statutory records with global coordination.",
   },
   {
     src: "/advisory.jpg",
@@ -144,6 +150,8 @@ export const serviceSlides = [
     span: " INVESTMENT READINESS",
     title: " & CAPITAL ADVISORY",
     href: "/services/investment_advisory",
+    summary:
+      "We don’t just prepare you for investors, we connect you to them. From governance to pitch decks, we ensure you’re investor-ready and linked to capital partners.",
   },
   {
     src: "/compliances.jpg",
@@ -151,6 +159,8 @@ export const serviceSlides = [
     span: "COMPLIANCE ",
     title: " & REGULATORY SOLUTIONS",
     href: "/services/compliance_support",
+    summary:
+      "Design and embed compliance systems — AML, KYC, data protection, filings, controls testing, and training for a durable compliance culture.",
   },
   {
     src: "/board.jpg",
@@ -158,6 +168,8 @@ export const serviceSlides = [
     span: "BOARD ",
     title: " & C-SUITES TRAINING",
     href: "/services/board_training",
+    summary:
+      "Targeted training for directors and executives on governance, ESG, risk, remuneration, and regulatory themes, delivered virtually or in person.",
   },
   {
     src: "/outsource.jpg",
@@ -165,6 +177,8 @@ export const serviceSlides = [
     span: "OUTSOURCING",
     title: " SERVICES",
     href: "/services/outsourcing",
+    summary:
+      "Operate lean without losing control. We provide payroll, HR, finance ops, vendor coordination and back-office support that scales with growth.",
   },
 ];
 

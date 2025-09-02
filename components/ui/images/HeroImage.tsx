@@ -11,10 +11,12 @@ import {
 } from "@/components/ui/carousels/carousel";
 import { slides } from "@/data";
 import { Button } from "../buttons/button";
+import Link from "next/link";
 
 export default function HeroImage() {
   const [selectedIndex, setSelectedIndex] = useState(0);
   const [api, setApi] = useState<CarouselApi | null>(null);
+
   useEffect(() => {
     if (!api) return;
 
@@ -23,12 +25,12 @@ export default function HeroImage() {
     onSelect(); // sync immediately
 
     return () => {
-      api.off("select", onSelect); // now properly returning void
+      api.off("select", onSelect);
     };
   }, [api]);
 
   return (
-    <div className="w-screen overflow-hidden relative   ">
+    <div className="w-screen overflow-hidden relative">
       <Carousel
         plugins={[
           Autoplay({
@@ -40,9 +42,10 @@ export default function HeroImage() {
         opts={{ loop: true }}
         setApi={setApi}
       >
-        <CarouselContent className="">
+        <CarouselContent>
           {slides.map((slide, index) => (
-            <CarouselItem key={index}>
+            <CarouselItem key={index} className="relative">
+              {/* Desktop image */}
               <Image
                 src={slide.src}
                 alt={slide.alt}
@@ -51,6 +54,7 @@ export default function HeroImage() {
                 className="hidden md:block w-full h-auto object-cover"
                 priority={index === 0}
               />
+              {/* Mobile image */}
               <Image
                 src={slide.mobile}
                 alt={slide.alt}
@@ -59,12 +63,27 @@ export default function HeroImage() {
                 className="md:hidden block w-full h-auto object-cover"
                 priority={index === 0}
               />
+
+              {/* Special case: second slide has button overlay */}
+              {index === 1 && (
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <Link
+                    href="http://www.bbinsights.online/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Button className=" cursor-pointer bg-[#F67D30] text-white px-6 py-3 rounded-full shadow-lg hover:bg-[#d96120] transition">
+                      Read More
+                    </Button>
+                  </Link>
+                </div>
+              )}
             </CarouselItem>
           ))}
         </CarouselContent>
 
-        {/* Dots */}
-        <div className=" gap-2 z-10 justify-center items-center md:-translate-y-12 hidden">
+        {/* Dots (hidden in your code, but keeping the structure) */}
+        <div className="gap-2 z-10 justify-center items-center md:-translate-y-12 hidden">
           {slides.map((_, index) => (
             <Button
               key={index}
