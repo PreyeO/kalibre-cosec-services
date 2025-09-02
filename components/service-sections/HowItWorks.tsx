@@ -23,7 +23,7 @@ const HowItWorksSection: React.FC<HowItWorksStepsProps> = ({
   return (
     <section className="bg-[#001529] md:py-[100px] py-[35px] px-5 md:px-[50px] xl:px-[50px] lg:px-[30px]">
       <div className="flex flex-col gap-[10px]">
-        <ColoredTitle title="HOW WE WORKS" />
+        <ColoredTitle title="HOW WE WORK" />
 
         <h3 className="max-w-[593px] text-base md:text-[31px] font-primary font-light text-[#A8A9AD] leading-[120%]">
           {highlightedText && (
@@ -37,7 +37,7 @@ const HowItWorksSection: React.FC<HowItWorksStepsProps> = ({
         {steps.map((step, index) => (
           <div
             key={index}
-            className={`lg:bg-[#001529]  md:w-[300px] md:h-[300px]   lg:h-[310px]  xl:w-[320px] xl:h-[320px]  w-[270px] h-auto rounded-full border flex-shrink-0 flex flex-col xl:items-start lg:py-[64px] xl:px-[60px]  items-center py-[49px] lg:justify-start justify-center z-[1] ${
+            className={`lg:bg-[#001529]  md:w-[300px] md:h-[300px]   lg:h-[310px]  xl:w-[320px] xl:h-[320px]  w-[280px] h-[280px] rounded-full border flex-shrink-0 flex flex-col xl:items-start lg:py-[64px] xl:px-[60px]  items-center py-[49px] lg:justify-start justify-center z-[1] ${
               index !== 0
                 ? "xl:ml-[-40px] lg:ml-[-80px] mt-[-80px] md:mt-0 lg:mt-0"
                 : ""
@@ -47,7 +47,7 @@ const HowItWorksSection: React.FC<HowItWorksStepsProps> = ({
               <h2 className="md:text-[31.6px] text-[22px] font-light font-tetiary text-[#FF914D]">
                 {step.digit}
               </h2>
-              <h4 className="text-base font-primary font-medium leading-6 text-[#FF914D]">
+              <h4 className="md:text-base text-sm font-primary font-medium leading-6 text-[#FF914D]">
                 {step.title}
               </h4>
             </div>

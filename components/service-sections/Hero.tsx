@@ -29,7 +29,7 @@ const ServiceHeroSection: React.FC<ServiceHeroProps> = ({
   showButton,
 }) => {
   return (
-    <section className=" pt-[70px] px-[22px]">
+    <section className=" md:pt-[70px] pt-[50px] px-[22px]">
       <div
         className={`${className} flex flex-col gap-4 justify-center items-center mx-auto  `}
       >
