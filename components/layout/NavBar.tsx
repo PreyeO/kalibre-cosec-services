@@ -49,7 +49,7 @@ const NavBar = () => {
       <div className="hidden lg:flex justify-center">
         <div
           className="fixed top-[60px] 
-      text-[#122847] font-normal text-lg h-[56px] rounded-[50px] 
+      text-[#122847]  text-lg h-[56px] rounded-[50px] 
       w-[569px] flex justify-center items-center 
       border border-[#E3E5E8] backdrop-blur-[10px] bg-white/60 px-2 z-50"
         >
@@ -65,7 +65,7 @@ const NavBar = () => {
                           <NavigationMenuLink
                             key={sublink.name}
                             asChild
-                            className="group text-base font-medium transition-colors text-white/70 hover:underline"
+                            className="group text-base  transition-colors text-white/70 hover:underline"
                           >
                             <Link href={sublink.href}>
                               <span className="flex gap-[1px] items-center">
@@ -86,7 +86,7 @@ const NavBar = () => {
                     >
                       <Link
                         href={link.href}
-                        className={`px-4 py-2 text-base font-medium transition-colors ${
+                        className={`px-4 py-2 font-medium transition-colors ${
                           pathname === link.href
                             ? "text-[#F67D30] focus:text-white focus:bg-[#F67D30]"
                             : "hover:text-[#F67D30]"
