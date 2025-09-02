@@ -7,7 +7,7 @@ import Heading from "../ui/typography/Heading";
 
 const Hero = () => {
   return (
-    <section className="mt-[70px] md:px-[50px] px-[20px] ">
+    <section className="pt-[50px] md:px-[50px] px-[20px] ">
       <div className="flex lg:flex-nowrap flex-wrap items-center gap-[30px] lg:gap-0 justify-center lg:justify-between ">
         <div className="flex flex-col gap-[16px] justify-center text-center md:text-left">
           <div className="flex-col gap-[10px] w-[346px] md:w-[636px]">
@@ -36,7 +36,7 @@ const Hero = () => {
           alt="image of staff"
           width={632}
           height={400}
-          className="w-full max-h-[400px] object-cover rounded-[30px]"
+          className="max-w-[632px] max-h-[400px] object-cover rounded-[30px]"
           priority
         />
       </div>
