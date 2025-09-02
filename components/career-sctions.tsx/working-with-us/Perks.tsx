@@ -9,7 +9,7 @@ const Perks = () => {
   return (
     <section className="pt-[30px] md:pt-[100px] lg:pb-[50px] ">
       <div className=" md:mx-[50px] mx-[20px]">
-        <div className=" bg-white/30 flex gap-6 lg:gap-[40px] justify-start md:px-[50px]  md:py-[50px] rounded-[40px] md:flex-nowrap flex-wrap ">
+        <div className="lg:shadow-[0_8px_32px_0_rgba(31,38,135,0.37)] bg-white/60 backdrop-blur-[10px] border border-white/30  flex gap-6 lg:gap-[40px] justify-start md:px-[50px]  md:py-[50px] rounded-[40px] md:flex-nowrap flex-wrap ">
           <div className=" flex-col gap-[10px] max-w-[580px] ">
             <ColoredTitle title="perks" />
 
