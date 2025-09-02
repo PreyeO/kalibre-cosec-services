@@ -13,7 +13,7 @@ const Hero = () => {
         <div className="flex flex-col gap-[16px] justify-center text-center md:text-left max-w-[636px]">
           <div className="flex flex-col gap-[10px]">
             <ColoredTitle title="Careers at Kalibre CoSec" />
-            <div className="text-[26px] leading-8 md:text-[55px] md:leading-[100%] flex flex-col gap-[6px]">
+            <div className="text-[26px] leading-8 md:text-[66px] md:leading-[80px] flex flex-col gap-[6px]">
               <Heading heading="Join Us" className="text-[#F67D30]" />
               <Heading
                 heading="And make an impact"
