@@ -27,39 +27,50 @@ const poppins = Poppins({
 
 // Metadata for SEO and social sharing
 export const metadata: Metadata = {
-  title: "Kalibre CoSec | Strategic Corporate Services for Scaling Businesses",
-  description:
-    "Kalibre CoSec provides entity management, ESG solutions and fundraising support to help founders raise capital & scale confidently across Africa and global markets.",
-  icons: {
-    icon: "/favicon.svg",
-    apple: "/favicon.svg",
+  metadataBase: new URL("https://kalibrecosec.org"),
+  title: {
+    default: "Kalibre CoSec",
+    template: "%s | Kalibre CoSec", // services | Kalibre CoSec
   },
-
+  description:
+    "Kalibre CoSec provides entity management, ESG solutions, and fundraising support to help founders raise capital and scale confidently across Africa and global markets.",
+  keywords: [
+    "Kalibre CoSec",
+    "corporate governance",
+    "entity management",
+    "fundraising support",
+    "ESG solutions",
+    "compliance services",
+    "business scaling Africa",
+  ],
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+    },
+  },
+  icons: {
+    icon: "/browser-logo.png",
+    apple: "/browser-logo.png",
+  },
   openGraph: {
     title:
       "Kalibre CoSec | Strategic Corporate Services for Scaling Businesses",
     description:
-      "Kalibre CoSec provides entity management, ESG solutions and fundraising support to help founders raise capital & scale confidently across Africa and global markets.",
-    url: "https://www.kalibrecosec.org/",
+      "Entity management, ESG solutions, and fundraising support to help founders raise capital & scale confidently across Africa and global markets.",
+    url: "https://kalibrecosec.org",
     siteName: "Kalibre CoSec",
     images: [
       {
-        url: "/logos.png",
+        url: "https://kalibrecosec.org/browser-logo.png",
         width: 1200,
         height: 630,
         alt: "Kalibre CoSec Logo",
       },
     ],
     type: "website",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title:
-      "Kalibre CoSec | Strategic Corporate Services for Scaling Businesses",
-    description:
-      "Kalibre CoSec provides entity management, ESG solutions and fundraising support to help founders raise capital & scale confidently across Africa and global markets.",
-    images: ["/logos.png"],
-    creator: "@kalibre Cosec",
   },
 };
 
