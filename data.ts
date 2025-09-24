@@ -689,8 +689,7 @@ export const deliveries = [
     span: "Modular:",
   },
   {
-    title:
-      "Board Onboarding: Specialized training for newly appointed directors",
+    title: " Specialized training for newly appointed directors",
     span: "Board Onboarding:",
   },
 ];

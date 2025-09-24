@@ -29,8 +29,9 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   metadataBase: new URL("https://kalibrecosec.org"),
   title: {
-    default: "Kalibre CoSec",
-    template: "%s | Kalibre CoSec", // services | Kalibre CoSec
+    default:
+      "Kalibre CoSec | Strategic Corporate Services for Scaling Businesses",
+    template: "%s | Kalibre CoSec",
   },
   description:
     "Kalibre CoSec provides entity management, ESG solutions, and fundraising support to help founders raise capital and scale confidently across Africa and global markets.",

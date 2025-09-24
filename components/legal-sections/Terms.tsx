@@ -14,10 +14,11 @@ const TermsSection = () => {
             className="text-[#122847] md:text-[54px] text-[32px] md:leading-[60px] leading-[38px] "
           />
           <BodyContent className="md:text-lg md:leading-[26px] text-[#3A3A3A] text-sm leading-[22px]">
-            Welcome to Kalibre CoSec Limited {`("Kalibre", "we", "us" or `}{" "}
+            Welcome to Kalibre CoSec Limited (
+            <strong>{`"Kalibre CoSec", "we", "us"`}</strong> or{" "}
             <strong>{`"our"`}</strong>
-            {`)`}. These Terms and Conditions <strong>{`(Terms)`}</strong>{" "}
-            govern your access to use of our website, digital platforms, and
+            ). These Terms and Conditions <strong>{`(Terms)`}</strong> govern
+            your access to the use of our website, digital platforms, and
             professional services. By visiting our website or engaging with our
             services, you agree to comply with and be bound by these Terms. If
             you do not agree to these Terms, please do not use our services.
@@ -43,15 +44,15 @@ const TermsSection = () => {
         </div>
         <div className="flex flex-col md:gap-[50px] gap-6 ">
           <TextGroup
-            content="Kalibre provides advisory, compliance, secretarial, governance, investor readiness, 
+            content="Kalibre CoSec provides advisory, compliance, secretarial, governance, investor readiness, 
   outsourcing, and related professional Services. Service details, deliverables, timelines, and fees will 
   be outlined in a separate engagement agreement or contract. These Terms supplement those 
   agreements."
             heading="2. Scope of Services"
           />
           <BodyContent className="md:text-lg md:leading-[26px] text-[#3A3A3A] text-sm leading-[22px]">
-            Kalibre does not provide legal, tax, or financial advice unless
-            expressly stated in writing.
+            Kalibre CoSec does not provide legal, tax, or financial advice
+            unless expressly stated in writing.
           </BodyContent>
           <TextGroup
             content="Clients must provide accurate, complete, and timely information necessary for 
@@ -61,9 +62,9 @@ const TermsSection = () => {
           />
           <BodyContent className="md:text-lg md:leading-[26px] text-[#3A3A3A] text-sm leading-[22px]">
             Clients are responsible for maintaining their own internal controls
-            and compliance beyond the scope of Kalibre’s Services.
+            and compliance beyond the scope of Kalibre CoSec Services.
           </BodyContent>
-          <div className="flex flex-col md:gap-[25px] gap-4 md:pb-[50px] pb-6">
+          <div className="flex flex-col md:gap-[25px] gap-4 ">
             <Heading
               heading="4. Intellectual Property"
               className="text-[#122847] md:text-[54px] text-[32px] md:leading-[60px] leading-[38px] "
@@ -72,34 +73,32 @@ const TermsSection = () => {
             <BodyContent className="md:text-lg md:leading-[26px] text-[#3A3A3A] text-sm leading-[22px]">
               <span className="font-bold">
                 {" "}
-                4.1 Kalibre Intellectual Property
+                4.1 Kalibre CoSec Intellectual Property
               </span>
               <br />
               All intellectual property rights in materials, methodologies,
-              reports, or technology developed by Kalibre remain our exclusive
-              property. Clients receive a limited, non-transferable license to
-              use deliverables solely for their internal purposes. Reproduction,
-              distribution, or modification without express written permission
-              is prohibited.
+              reports, or technology developed by Kalibre CoSec remain our
+              exclusive property. Clients receive a limited, non-transferable
+              license to use deliverables solely for their internal purposes.
+              Reproduction, distribution, or modification without express
+              written permission is prohibited.
               <br />
               <span className="font-bold">4.2 Client Materials</span>
               <br />
               Clients retain all rights, title, and interest in their Client
-              Materials. By providing Client Materials to Kalibre, Clients grant
-              Kalibre a limited, non-exclusive, royalty-free license to use,
-              reproduce, and process such Client Materials solely for the
-              purpose of delivering the agreed Services.
+              Materials. By providing Client Materials to Kalibre CoSec, Clients
+              grant Kalibre CoSec a limited, non-exclusive, royalty-free license
+              to use, reproduce, and process such Client Materials solely for
+              the purpose of delivering the agreed Services.
             </BodyContent>
           </div>
           <TextGroup
-            content="Both parties agree to keep all Confidential Information secure and not disclose it to 
-  third parties except as required by law. 
-  This obligation remains in effect indefinitely beyond the termination of Services."
+            content="Both parties agree to keep all Confidential Information secure and not disclose it to third parties except as required by law. This obligation remains in effect indefinitely beyond the termination of Services."
             heading="5. Confidentiality"
           />
 
           <TextGroup
-            content="Kalibre processes personal data in compliance with applicable laws including the General 
+            content="Kalibre CoSec processes personal data in compliance with applicable laws including the General 
             Data Protection Regulation (GDPR) and the Nigeria Data Protection Regulation (NDPR). 
             Details of data handling are described in our Privacy Policy which forms part of these Terms."
             heading="6.  Data Privacy and Protection"
@@ -117,20 +116,20 @@ const TermsSection = () => {
             heading="7. Fees and Payment Terms"
           />
           <TextGroup
-            content="Kalibre’s liability for any claims related to Services shall be limited to the fees 
+            content="Kalibre CoSec liability for any claims related to Services shall be limited to the fees 
   paid for the specific Service giving rise to the claim. We disclaim liability for 
   indirect, incidental, consequential, or punitive damages including loss of profits or goodwill."
             heading="8. Limitation of Liability"
           />
 
           <TextGroup
-            content="Clients agree to indemnify, defend, and hold harmless Kalibre and its affiliates 
+            content="Clients agree to indemnify, defend, and hold harmless Kalibre CoSec and its affiliates 
   from claims, damages, liabilities, and expenses arising from Client breaches of these Terms or unlawful conduct."
             heading="9. Indemnification"
           />
 
           <TextGroup
-            content="Kalibre facilitates introductions between Clients and potential investors but does 
+            content="Kalibre CoSec facilitates introductions between Clients and potential investors but does 
             not guarantee funding, investment decisions, or the outcome of any investor relationship."
             heading="10.  Investor Matchmaking Disclaimer"
           />
@@ -140,18 +139,18 @@ const TermsSection = () => {
             compliance obligations.
           </BodyContent>
           <BodyContent className="md:text-lg md:leading-[26px] text-[#3A3A3A] text-sm leading-[22px]">
-            Kalibre is not a broker, financial advisor, or fiduciary, and does
-            not provide investment advice.
+            Kalibre CoSec is not a broker, financial advisor, or fiduciary, and
+            does not provide investment advice.
           </BodyContent>
           <TextGroup
-            content="Kalibre reserves the right to modify, suspend, or discontinue any part of its 
+            content="Kalibre CoSec reserves the right to modify, suspend, or discontinue any part of its 
   Services or website without prior notice. We will endeavor to minimize disruptions and notify Clients when feasible."
             heading="11.  Service Modifications and Interruptions"
           />
 
           <TextGroup
             content="Either party may terminate Service agreements in accordance with the terms in the 
-  engagement letter. Kalibre may suspend or terminate Services immediately for non-payment, 
+  engagement letter. Kalibre CoSec may suspend or terminate Services immediately for non-payment, 
   breach of Terms, or unlawful activity. Termination does not relieve Clients of outstanding fees or confidentiality obligations."
             heading="12.  Termination and Suspension"
           />
@@ -169,12 +168,12 @@ const TermsSection = () => {
             heading="14.   Dispute Resolution"
           />
           <TextGroup
-            content="Kalibre’s website may contain links to third-party websites or services for convenience. We do not control or endorse 
+            content="Kalibre CoSec website may contain links to third-party websites or services for convenience. We do not control or endorse 
             these third parties and disclaim liability for any damages or losses resulting from their use."
             heading="15. Third-Party Websites and Services"
           />
           <TextGroup
-            content="Kalibre may update these Terms periodically to reflect changes in law, business practices, or Service offerings. Updated 
+            content="Kalibre CoSec may update these Terms periodically to reflect changes in law, business practices, or Service offerings. Updated 
   Terms will be posted online with the effective date. Continued use of Services constitutes acceptance."
             heading="16. Changes to Terms"
           />

@@ -34,7 +34,7 @@ const SolutionsSection: React.FC<SolutionsSectionProps> = ({ solutions }) => {
             <div
               key={index}
               className="group w-[350px] lg:w-[400px] h-auto md:h-[500px] lg:h-[430px] 
-             rounded-[20px] border border-[#BCC4DC] 
+             rounded-[20px] border md:border-[#BCC4DC] border-[#F67D30] 
              hover:border-[#F67D30] transition-colors duration-300
              md:pt-[25px] py-4 md:pb-[51px] px-4"
             >

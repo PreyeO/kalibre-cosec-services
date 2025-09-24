@@ -16,7 +16,7 @@ const WhyUsCard: React.FC<WhyUsCardProps> = ({
   return (
     <div
       className={`group ${className} xl:max-w-[400px] max-w-[350px] h-auto 
-        bg-white border border-[#BCC4DC] rounded-[16px] 
+        bg-white border md:border-[#BCC4DC] rounded-[16px] border-[#F67D30]
         lg:px-[30px] px-3 flex flex-col py-[20px] 
         transition-colors duration-300 hover:border-[#F67D30]`}
     >
