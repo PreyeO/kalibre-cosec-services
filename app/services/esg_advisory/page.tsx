@@ -19,7 +19,7 @@ const page = () => {
         label="Get Started"
         className=" max-w-[563px] "
       />
-      <div className="service-bg-gradient relative z-10 opacity-0.3">
+      <div className=" relative z-10 opacity-0.3">
         <Sectors title="Our Clients Sectors" />
         <OurPhilosophySection
           philosophy="At Kalibre CoSec, we see ESG not just as a reporting requirement 

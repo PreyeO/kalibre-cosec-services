@@ -5,11 +5,13 @@ import Underline from "../../ui/underline";
 import BodyContent from "../../ui/typography/BodyContent";
 import IdentityCard from "./identity-card";
 const AboutUs = () => {
+  // xl:-translate-y-18 -translate-y-6 md:-translate-y-10
   return (
     <section
       id="about_us"
-      className="l xl:-translate-y-18 -translate-y-6 md:-translate-y-10 pb-[35px] 
-      md:pb-[52px] md:px-[50px] px-[21px] bg-[linear-gradient(180deg,_#E9E9E9_0%,_#BCC4DC_100%)]"
+      className="pb-[35px] 
+      md:pb-[52px] md:px-[50px] px-[21px] bg-[linear-gradient(180deg,_#FFFFFF_0%,_#BCC4DC_100%)]
+"
     >
       <Image
         src="/button.gif"

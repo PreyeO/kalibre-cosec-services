@@ -63,7 +63,6 @@ export default function HeroImage() {
                 className="md:hidden block w-full h-auto object-cover"
                 priority={index === 0}
               />
-
               {/* Special case: second slide has button overlay */}
               {index === 1 && (
                 <div className="absolute inset-0 flex items-center justify-center">
@@ -72,7 +71,7 @@ export default function HeroImage() {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <Button className=" cursor-pointer bg-[#F67D30] text-white px-6 py-3 rounded-full shadow-lg hover:bg-[#d96120] transition">
+                    <Button className=" text-sm cursor-pointer bg-[#F67D37] text-white md:px-6 md:py-3 rounded-full shadow-lg hover:bg-[#d96120] transition">
                       Read More
                     </Button>
                   </Link>

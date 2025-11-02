@@ -7,7 +7,7 @@ import Heading from "../ui/typography/Heading";
 
 const Hero = () => {
   return (
-    <section className="pt-[50px] md:px-[50px] px-[20px]">
+    <section className="pt-[50px] md:px-[50px] px-[20px] ">
       <div className="flex lg:flex-nowrap flex-wrap items-center gap-[30px] lg:gap-10 justify-center lg:justify-between">
         {/* Left Content */}
         <div className="flex flex-col gap-[16px] justify-center text-center md:text-left max-w-[636px]">

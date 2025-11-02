@@ -19,7 +19,7 @@ const page = () => {
         label="Get Started"
         className=" max-w-[873px] "
       />
-      <div className="service-bg-gradient relative z-10 opacity-0.3">
+      <div className=" relative z-10 opacity-0.3">
         <Sectors title="Our Clients Sectors" />
         <OurPhilosophySection
           philosophy="An effective board or executive team not only possesses experience 
