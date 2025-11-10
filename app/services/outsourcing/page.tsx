@@ -19,7 +19,7 @@ const page = () => {
         className=" max-w-[695px] "
         downloadUrl="/EOR-SHEET.pdf"
       />
-      <div className="service-bg-gradient relative z-10 opacity-0.3">
+      <div className=" relative z-10 opacity-0.3">
         <Sectors title="Our Clients Sectors" />
         <OurPhilosophySection
           philosophy="Outsourcing is no longer just operational, it is strategic. Whether managing 
