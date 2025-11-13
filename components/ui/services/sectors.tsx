@@ -6,7 +6,7 @@ import Marquee from "react-fast-marquee";
 interface SectorsProps {
   title: string;
 }
-// lg:mt-[-74px]
+
 const Sectors: React.FC<SectorsProps> = ({ title }) => {
   return (
     <div className="flex flex-col justify-center items-center gap-[50px] lg:mt-[-74px] -mt-4 md:mt-[-34px]  pt-10 overflow-hidden">

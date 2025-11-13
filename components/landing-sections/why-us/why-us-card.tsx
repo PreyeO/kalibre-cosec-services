@@ -24,7 +24,7 @@ const WhyUsCard: React.FC<WhyUsCardProps> = ({
       <div
         className="
     w-[40px] lg:w-[50px] h-[40px] lg:h-[50px] 
-    rounded-[16px] border-[0.1px]
+    rounded-[16px] border-[0.1px]  
     flex justify-center items-center 
     transition-all duration-300 ease-in-out
     group-hover:border-[#F67D30] 

@@ -8,7 +8,6 @@ import {
   FileText,
   BarChart2,
   ShieldAlert,
-  Facebook,
   Instagram,
   Linkedin,
   Twitter,
@@ -27,6 +26,7 @@ import {
   Speaker,
   CreditCard,
   Briefcase,
+  Github,
 } from "lucide-react";
 
 export const navLinks = [
@@ -246,21 +246,21 @@ export const socials = [
   {
     name: "Instagram",
     icon: Instagram,
-    href: "https://instagram.com/yourhandle",
+    href: "https://www.instagram.com/kalibrecosec/ ",
   },
   {
     name: "LinkedIn",
     icon: Linkedin,
-    href: "https://instagram.com/yourhandle",
+    href: "https://www.linkedin.com/company/kalibrecosec",
   },
   {
     name: "X",
     icon: Twitter,
-    href: "https://instagram.com/yourhandle",
+    href: "https://x.com/Kalibre_CoSec",
   },
   {
-    name: "Facebook",
-    icon: Facebook,
+    name: "GitHub",
+    icon: Github,
     href: "https://instagram.com/yourhandle",
   },
 ];

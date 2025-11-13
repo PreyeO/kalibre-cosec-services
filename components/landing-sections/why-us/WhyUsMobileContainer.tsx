@@ -8,26 +8,26 @@ const WhyUsMobileContainer = () => {
       <WhyUsCard
         title="Integrity & Accountability"
         content="We go beyond compliance to embed governance as a growth enabler and investor signal"
-        icon={<UsersRound className="" size={20} color="black" />}
+        icon={<UsersRound className="" size={20} color="#F67D30" />}
         className=""
       />
       <WhyUsCard
         title="Africa-Focused, Globally Aligned"
         content="We understand the nuances of operating across African markets while meeting global standards."
-        icon={<Globe className="" size={20} color="black" />}
+        icon={<Globe className="" size={20} color="#F67D30" />}
         className=""
       />
 
       <WhyUsCard
         title="Expertise Meets Insight"
         content="Our foundation in thought leadership keeps us ahead of trends and close to our clients."
-        icon={<Lightbulb className="" size={20} color="black" />}
+        icon={<Lightbulb className="" size={20} color="#F67D30" />}
         className=" "
       />
       <WhyUsCard
         title="Bespoke. Practical. Scalable."
         content="No copy-paste playbooks - only solutions tailored to your ambition and operating reality."
-        icon={<TrendingUp className="" size={20} color="black" />}
+        icon={<TrendingUp className="" size={20} color="#F67D30" />}
         className=""
       />
     </div>
