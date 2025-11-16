@@ -258,11 +258,6 @@ export const socials = [
     icon: Twitter,
     href: "https://x.com/Kalibre_CoSec",
   },
-  {
-    name: "GitHub",
-    icon: Github,
-    href: "https://instagram.com/yourhandle",
-  },
 ];
 
 export const quickLinks = [
